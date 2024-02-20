@@ -1,5 +1,8 @@
 var hay_seccion = false;
 var hay_producto = false;
+var hay_checkout = false;
+
+const cpOrigen = 1878;
 
 var CARRITO = [];
 
@@ -14,14 +17,14 @@ class creador {
 
 function enviar_mensaje() {
 
-    var nombre = document.getElementById("nombre").value;
+    calcular_envio()
 
+    var nombre = document.getElementById("nombre").value;
 
     var txt = document.getElementById("campo1").value;
 
     var texto = `Hola me llamo ${nombre}, 
-    y estamos interesados en trabajar con ustedes.
-    Mis aclaraciones/comentarios son: ${txt}`;
+    y tengo la siguiente consulta: ${txt}`;
 
     var tel = +5411;
 
@@ -32,20 +35,12 @@ function enviar_mensaje() {
 }
 
 async function calcular_envio(){
-    const url = 'https://correo-argentino1.p.rapidapi.com/calcularPrecio';
+    const url = 'https://correo-argentino1.p.rapidapi.com/calcularPrecio?cpOrigen=1878&cpDestino=1876&provinciaOrigen=AR-B&provinciaDestino=AR-B&peso=5';
     const options = {
-        method: 'POST',
+        method: 'GET',
         headers: {
-            'content-type': 'application/json',
             'X-RapidAPI-Key': 'f0a4e29254msh1d48fd45f9d7843p18bc2cjsn8b85d259666a',
             'X-RapidAPI-Host': 'correo-argentino1.p.rapidapi.com'
-        },
-        body: {
-            cpOrigen: '1000',
-            cpDestino: '2000',
-            provinciaOrigen: 'AR-B',
-            provinciaDestino: 'AR-S',
-            peso: '5'
         }
     };
     
@@ -59,6 +54,10 @@ async function calcular_envio(){
 }
 
 function inicio(){
+
+    if(hay_checkout){
+        return;
+    }
 
     let main = document.getElementById("main");
 
@@ -80,38 +79,251 @@ function inicio(){
     document.getElementById("categoria").style.display = "block";
     document.getElementById("ofertas").style.display = "block";
 
-    calcular_envio();
-
     return;
+}
+
+function cargar_cant_producto(){
+
+    let cantProd = CARRITO.length;
+
+    document.getElementById("cantprod1").innerHTML = cantProd;
+    document.getElementById("cantprod2").innerHTML = cantProd;
+
+    let total = 0;
+
+    for(let i = 0; i < CARRITO.length; i++){
+
+        total += CARRITO[i]['precio'] * CARRITO[i]['cantidad'];
+
+    }
+
+    document.getElementById("Total").innerHTML = `$${total}`;
+}
+
+function borrar(producto, talle){
+    for (i in CARRITO) {
+        if (CARRITO[i]["nombre"] == producto  && CARRITO[i]["talle"] == talle) {
+            CARRITO.splice(i, 1);
+        }
+    }
+    
+    document.getElementById(producto).remove();
+
+    cargar_cant_producto();
+}
+
+function existe_producto(producto, talle, cantidad){
+
+    let existe = false;
+
+    for (i in CARRITO) {
+        if (CARRITO[i]["nombre"] == producto && CARRITO[i]["talle"] == talle) {
+            existe = true;
+            CARRITO[i]["cantidad"] += cantidad;
+            document.getElementById(`cantidad${CARRITO[i]["nombre"]}${talle}`).innerHTML = `Cantidad: ${CARRITO[i]["cantidad"]}`;
+            document.getElementById(`price${CARRITO[i]["nombre"]}${talle}`).innerHTML = `$${CARRITO[i]["cantidad"] * CARRITO[i]["precio"]}`;
+        }
+    }
+
+    return existe;
+}
+
+function checkout(){
+
+    if(CARRITO.length == 0){
+        return;
+    }
+
+    hay_checkout = true;
+
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu2").style.display = "none";
+    document.getElementById("cart1").style.display = "none";
+
+    document.getElementById("uno").style.display = "none";
+    document.getElementById("categoria").style.display = "none";
+    document.getElementById("ofertas").style.display = "none";
+
+    if(hay_seccion){
+        let elemento = document.getElementById("seccion_prod");
+        main.removeChild(elemento);
+
+        hay_seccion = false;
+    }
+
+    if(hay_producto){
+        let elemento = document.getElementById("product");
+        main.removeChild(elemento);
+
+        hay_producto = false;
+    }
+
+    main.insertAdjacentHTML('afterbegin',`
+    <div class="checkout_area section-padding-80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+                    <div class="checkout_details_area mt-50 clearfix">
+
+                        <div class="cart-page-heading mb-30">
+                            <h5>Datos de la compra</h5>
+                        </div>
+
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="first_name">Nombre <span>*</span></label>
+                                    <input type="text" class="form-control" id="nombre" value="" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="last_name">Apellido <span>*</span></label>
+                                    <input type="text" class="form-control" id="apellido" value="" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="street_address">Domicilio <span>*</span></label>
+                                    <input type="text" class="form-control mb-3" id="domicilio" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="postcode">Codigo postal <span>*</span></label>
+                                    <input type="text" class="form-control" id="cp" value="">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="phone_number">Numero de telefono<span>*</span></label>
+                                    <input type="number" class="form-control" id="telefono" min="0" value="">
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <label for="email_address">Email<span>*</span></label>
+                                    <input type="email" class="form-control" id="mail" value="">
+                                </div>
+ 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 ml-lg-auto">
+                    <div class="order-details-confirmation">
+
+                        <div class="cart-page-heading">
+                            <h5>Tu compra</h5>
+                            <p style="color:red">Todos los productos se entregan de 7 a 10 dias</p>
+                        </div>
+
+                        <ul id="list_prod" class="order-details-form mb-4">
+                            <li><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></li>
+                        </ul>
+
+                        <div id="accordion" role="tablist" class="mb-4">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h6 class="mb-0">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-circle-o mr-3"></i>Retiro en Quilmes</a>
+                                    </h6>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>bla bla bla</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <h6 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-circle-o mr-3"></i>Retiro en microcentro</a>
+                                    </h6>
+                                </div>
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Bla bla bla</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingThree">
+                                    <h6 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fa fa-circle-o mr-3"></i>Envio a domicilio</a>
+                                    </h6>
+                                </div>
+                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>bla bla bla</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div id="btn-checkout-mp" class="btn essence-btn">PAGAR</div>
+                        <div id="wallet_container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`);
+    
+
+    main.insertAdjacentHTML('afterbegin', `    
+    <div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="page-title text-center">
+                        <h2>PAGO</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`);
+ 
+    let list_prod =  document.getElementById("list_prod");
+
+    let total = 0;
+
+    for(i in CARRITO){
+        list_prod.innerHTML += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["cantidad"]}</span><span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span></li> `
+        total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
+    }
+
+    list_prod.innerHTML +=`<li><span></span><span>${total}</span>`
+
+    pagos(total);
 }
 
 function aniadir_al_carrito(type, id){
 
     let tipo = tipo_producto(type);
-
     let talle = document.getElementById("talle").value;
 
-    const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], 1);
 
-    CARRITO.push(producto);
+    if(!existe_producto(tipo[parseInt(id)][0],talle, 1)){
 
-    let carritoHTML = document.getElementById("cart-list");
+        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], 1);
 
-    carritoHTML.innerHTML += `
-                <!-- Single Cart Item -->
-                <div class="single-cart-item">
-                    <a href="#" class="product-image">
-                        <img src="img/product-img/product-3.jpg" class="cart-thumb" alt="">
-                        <!-- Cart Item Desc -->
-                        <div class="cart-item-desc">
-                          <span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span>
-                            <h6>${tipo[parseInt(id)][0]}</h6>
-                            <p class="size">Talle: ${talle}</p>
-                            <p class="color">Cantidad: 1</p>
-                            <p class="price">$${tipo[parseInt(id)][1]}</p>
-                        </div>
-                    </a>
-                </div>`
+        CARRITO.push(producto);
+
+        let carritoHTML = document.getElementById("cart-list");
+
+        carritoHTML.innerHTML += `
+        <!-- Single Cart Item -->
+        <div class="single-cart-item" id="${tipo[parseInt(id)][0]}">
+            <a href="#" class="product-image">
+                <img src="img/product-img/product-3.jpg" class="cart-thumb" alt="">
+                <!-- Cart Item Desc -->
+                <div class="cart-item-desc">
+                    <button type="button" value="${tipo[parseInt(id)][0]}" onclick="borrar(this.value, '${talle}')" ><span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span></button>
+                    
+                    <h6>${tipo[parseInt(id)][0]}</h6>
+                    <p class="size">Talle: ${talle}</p>
+                    <p class="color" id="cantidad${tipo[parseInt(id)][0]}${talle}">Cantidad: 1</p>
+                    <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1]}</p>
+                </div>
+            </a>
+        </div>`
+    }
+
+    cargar_cant_producto();
 }
 
 function tipo_producto(type){
@@ -126,6 +338,8 @@ function crear_producto(type, id){
     let main = document.getElementById("main");
 
     document.getElementById("seccion_prod").style.display = "none";
+
+    let producto = tipo_producto(type);
 
     main.insertAdjacentHTML('afterbegin', `
     
@@ -194,12 +408,12 @@ function crear_producto(type, id){
 
         <!-- Single Product Description -->
             <div id="descripcion" class="single_product_desc clearfix">
-                <span>mango</span>
-                <a href="cart.html">
-                    <h2>One Shoulder Glitter Midi Dress</h2>
-                </a>
-                <p class="product-price"><span class="old-price">$65.00</span> $49.00</p>
-                <p class="product-desc">Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin.</p>
+            
+                <h2>${producto[id][0]}</h2>
+                
+                <!--<p class="product-price"><span class="old-price">$65.00</span> $49.00</p>-->
+                <p class="product-price">$ ${producto[id][1]}</p>
+                <p class="product-desc">${producto[id][2]}</p>
 
                 <!-- Form -->
                 <div class="cart-form clearfix" method="post">

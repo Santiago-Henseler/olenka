@@ -18,7 +18,10 @@
 
     <script src="productos.js"></script>
     <script src="main.js"></script>
-    
+    <script src="mp.js"></script>
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
 </head>
 
 <body>
@@ -30,11 +33,11 @@
                 <!-- Logo -->
                 <div class="nav-brand" onclick="inicio()" ><img src="imagenes/logo.png" alt="" style="height: 35px;" class="img-fluid"></div>
                 <!-- Navbar Toggler -->
-                <div class="classy-navbar-toggler">
+                <div id="menu2" class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
                 </div>
                 <!-- Menu -->
-                <div class="classy-menu">
+                <div id="menu1" class="classy-menu">
                     <!-- close btn -->
                     <div class="classycloseIcon">
                         <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
@@ -45,16 +48,9 @@
                             <li><a href="#">Ropa</a>
                                 <div class="megamenu">
                                     <ul class="single-mega cn-col-4">
-                                        <li class="title">MUJER</li>
+                                        <li class="title">COLECCION COMPLETA</li>
                                         <li onclick="crear_seccion('remeras')">Remera</li>
                                         <li onclick="crear_seccion('rera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">HOMBRE</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
                                         <li onclick="crear_seccion('remera')">Remera</li>
                                         <li onclick="crear_seccion('remera')">Remera</li>
                                     </ul>
@@ -78,8 +74,8 @@
             <!-- Header Meta Data -->
             <div class="header-meta d-flex clearfix justify-content-end">
                 <!-- Cart Area -->
-                <div class="cart-area">
-                    <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span>0</span></a>
+                <div id="cart1" class="cart-area" >
+                    <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span id="cantprod1">0</span></a>
                 </div>
             </div>
 
@@ -90,11 +86,11 @@
     <!-- ##### Right Side Cart Area ##### -->
     <div class="cart-bg-overlay"></div>
 
-    <div class="right-side-cart-area">
+    <div class="right-side-cart-area" >
 
         <!-- Cart Button -->
-        <div class="cart-button">
-            <a href="#" id="rightSideCart"><img src="img/core-img/bag.svg" alt=""> <span>0</span></a>
+        <div class="cart-button" >
+            <a href="#" id="rightSideCart"><img src="img/core-img/bag.svg" alt=""> <span id="cantprod2">0</span></a>
         </div>
 
         <div class="cart-content d-flex">
@@ -102,7 +98,7 @@
             <!-- Cart List Area -->
             <div id="cart-list" class="cart-list">
                 
-                a
+                
             </div>
 
             <!-- Cart Summary -->
@@ -113,7 +109,7 @@
                     <li><span>Total:</span> <span id="Total">$0</span></li>
                 </ul>
                 <div class="checkout-btn mt-100">
-                    <a href="checkout.html" class="btn essence-btn">pagar</a>
+                    <div  onclick="checkout()" class="btn essence-btn">pagar</div>
                 </div>
             </div>
         </div>
@@ -148,15 +144,9 @@
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
                         <div class="catagory-content">
-                            <a href="#">MUJER</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Catagory -->
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-3.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">HOMBRE</a>
+                            <center>
+                            <a href="#">COLECCION COMPLETA</a>
+                        </center>
                         </div>
                     </div>
                 </div>
@@ -180,7 +170,7 @@
                 <div class="col-12">
                     <div class="section-heading text-center">
                         <hr>
-                        <h2>OFERTAS</h2>
+                        <h2>COLECCION VINTAJE</h2>
                     </div>
                 </div>
             </div>

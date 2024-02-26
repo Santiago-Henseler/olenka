@@ -1,6 +1,7 @@
 var hay_seccion = false;
 var hay_producto = false;
 var hay_checkout = false;
+var hay_vintage = false;
 
 const cpOrigen = 1878;
 
@@ -54,6 +55,8 @@ async function calcular_envio(){
 }
 
 function inicio(){
+
+    window.scrollTo(0,0);
 
     if(hay_checkout){
         return;
@@ -129,6 +132,8 @@ function existe_producto(producto, talle, cantidad){
 }
 
 function checkout(){
+
+    window.scrollTo(0,0);
 
     if(CARRITO.length == 0){
         return;
@@ -217,38 +222,52 @@ function checkout(){
                         <div id="accordion" role="tablist" class="mb-4">
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingOne">
-                                    <h6 class="mb-0">
-                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-circle-o mr-3"></i>Retiro en Quilmes</a>
-                                    </h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input"  type="radio" name="exampleRadios" id="op1" value="Quilmes">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                          <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Retiro en quilmes</a>
+                                        </label>
+                                      </div>
+                 
                                 </div>
 
                                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>bla bla bla</p>
+                                        <p>Retiro en quilmes en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingTwo">
-                                    <h6 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-circle-o mr-3"></i>Retiro en microcentro</a>
-                                    </h6>
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <div class="form-check">
+                                        <input class="form-check-input"  type="radio" name="exampleRadios" id="op2" value="Capital">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">Retiro en capital</a>
+                                        </label>
+                                    </div>
+                
                                 </div>
-                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>Bla bla bla</p>
+                                        <p>Retiro en capital en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingThree">
-                                    <h6 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fa fa-circle-o mr-3"></i>Envio a domicilio</a>
-                                    </h6>
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <div class="form-check">
+                                        <input class="form-check-input" onclick="alert(calcular_envio())"  type="radio" name="exampleRadios" id="op3" value="Envio">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseTre">Envio a domicilio</a>
+                                        </label>
+                                    </div>
+                
                                 </div>
-                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+
+                                <div id="collapseTre" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>bla bla bla</p>
+                                        <p>Retiro en quilmes en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,18 +307,19 @@ function checkout(){
 
     list_prod.innerHTML +=`<li><span></span><span>${total}</span>`
 
-    pagos(total);
+    pagos(total, CARRITO);
 }
 
 function aniadir_al_carrito(type, id){
 
     let tipo = tipo_producto(type);
     let talle = document.getElementById("talle").value;
+    let cantidad = Number(document.getElementById("cantidad").value);
 
 
     if(!existe_producto(tipo[parseInt(id)][0],talle, 1)){
 
-        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], 1);
+        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], cantidad);
 
         CARRITO.push(producto);
 
@@ -316,8 +336,8 @@ function aniadir_al_carrito(type, id){
                     
                     <h6>${tipo[parseInt(id)][0]}</h6>
                     <p class="size">Talle: ${talle}</p>
-                    <p class="color" id="cantidad${tipo[parseInt(id)][0]}${talle}">Cantidad: 1</p>
-                    <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1]}</p>
+                    <p class="color" id="cantidad${tipo[parseInt(id)][0]}${talle}">Cantidad: ${cantidad}</p>
+                    <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1] * cantidad}</p>
                 </div>
             </a>
         </div>`
@@ -331,13 +351,28 @@ function tipo_producto(type){
     if(type == "remeras"){
         return remeras;
     }
+    if(type == "vintage"){
+        return vintaje;
+    }
 }
 
 function crear_producto(type, id){
 
+    window.scrollTo(0,0);
+
     let main = document.getElementById("main");
 
-    document.getElementById("seccion_prod").style.display = "none";
+    if(hay_seccion){
+        document.getElementById("seccion_prod").style.display = "none";
+    }else{
+        document.getElementById("uno").style.display = "none";
+        document.getElementById("categoria").style.display = "none";
+        document.getElementById("ofertas").style.display = "none";
+    }
+    
+    if(type == "vintage"){
+        hay_vintage =true;
+    }
 
     let producto = tipo_producto(type);
 
@@ -425,13 +460,13 @@ function crear_producto(type, id){
                             <option value="m">Size: M</option>
                             <option value="s">Size: S</option>
                         </select>
-                        <!-- Single Product Description 
-                        <select name="select" id="productColor">
-                            <option value="value">Color: Black</option>
-                            <option value="value">Color: White</option>
-                            <option value="value">Color: Red</option>
-                            <option value="value">Color: Purple</option>
-                        </select>-->
+                         
+                        <select name="select" id="cantidad">
+                            <option value="1">Cantidad: 1</option>
+                            <option value="2">Cantidad: 2</option>
+                            <option value="3">Cantidad: 3</option>
+                            <option value="4">Cantidad: 4</option>
+                        </select>
                     </div>
                     <!-- Cart & Favourite Box -->
                     <div class="cart-fav-box d-flex align-items-center">
@@ -448,6 +483,8 @@ function crear_producto(type, id){
 
 function crear_seccion(type){
    
+    window.scrollTo(0,0);
+
     let main = document.getElementById("main");
 
     seccion = !!document.getElementById(`${type}`);
@@ -455,9 +492,13 @@ function crear_seccion(type){
     if(hay_producto){
         let elemento = document.getElementById("product");
         main.removeChild(elemento);
-        document.getElementById("seccion_prod").style.display = "block";
+        if(!hay_vintage){
+            document.getElementById("seccion_prod").style.display = "block";
+        }
         hay_producto = false;
     }
+
+
 
     if(!seccion && hay_seccion){
         let elemento = document.getElementById("seccion_prod");

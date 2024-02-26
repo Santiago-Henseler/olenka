@@ -50,16 +50,9 @@
                                     <ul class="single-mega cn-col-4">
                                         <li class="title">COLECCION COMPLETA</li>
                                         <li onclick="crear_seccion('remeras')">Remera</li>
-                                        <li onclick="crear_seccion('rera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
                                     </ul>
                                     <ul class="single-mega cn-col-4">
                                         <li class="title">NIÑOS</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
-                                        <li onclick="crear_seccion('remera')">Remera</li>
                                     </ul>
                                 
                                 </div>
@@ -126,9 +119,9 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="hero-content">
-                        <h6>asoss</h6>
-                        <h2>New Collection</h2>
-                        <a href="#" class="btn essence-btn">view collection</a>
+                        <h6></h6>
+                        <h2>Nueva colección</h2>
+                        <a href="#ofertas" class="btn essence-btn">ver colleción</a>
                     </div>
                 </div>
             </div>
@@ -145,8 +138,17 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
                         <div class="catagory-content">
                             <center>
-                            <a href="#">COLECCION COMPLETA</a>
-                        </center>
+                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">COLECCION COMPLETA</a>
+                            </center>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">COLECCION COMPLETA</li>
+                                <li onclick="crear_seccion('remeras')">Remera</li>
+                                <li onclick="crear_seccion('vintage')">Remera</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -154,7 +156,15 @@
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
                         <div class="catagory-content">
-                            <a href="#">NIÑOS</a>
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="#">NIÑOS</a>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">COLECCION COMPLETA</li>
+                                <li onclick="crear_seccion('vintage')">Remera</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -170,7 +180,7 @@
                 <div class="col-12">
                     <div class="section-heading text-center">
                         <hr>
-                        <h2>COLECCION VINTAJE</h2>
+                        <h2>COLECCION VINTAGE</h2>
                     </div>
                 </div>
             </div>
@@ -188,28 +198,21 @@
                                 <img src="img/product-img/product-1.jpg" alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                                    <!-- Product Badge -->
+                                    <!-- Product Badge 
                                     <div class="product-badge offer-badge">
                                         <span>-30%</span>
-                                    </div>
-                                <!-- Favourite -->
-                                <div class="product-favourite">
-                                    <a href="#" class="favme fa fa-heart"></a>
-                                </div>
+                                    </div>-->
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
-                                <span>topshop</span>
-                                <a href="single-product-details.html">
-                                    <h6>Knot Front Mini Dress</h6>
-                                </a>
+                                <h6>Knot Front Mini Dress</h6>
                                 <p class="product-price">$80.00</p>
 
                                 <!-- Hover Content -->
                                 <div class="hover-content">
                                     <!-- Add to Cart -->
                                     <div class="add-to-cart-btn">
-                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                        <div onclick="crear_producto('vintage', 1)" class="btn essence-btn">Ver más</div>
                                     </div>
                                 </div>
                             </div>
@@ -219,32 +222,24 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product-2.jpg" alt="">
+                                <img src="img/product-img/product-1.jpg" alt="">
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product-3.jpg" alt="">
-
-                                 <!-- Product Badge -->
-                                <div class="product-badge offer-badge">
-                                    <span>-30%</span>
-                                </div>
-                                <!-- Favourite -->
-                                <div class="product-favourite">
-                                    <a href="#" class="favme fa fa-heart"></a>
-                                </div>
+                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
+                                    <!-- Product Badge 
+                                    <div class="product-badge offer-badge">
+                                        <span>-30%</span>
+                                    </div>-->
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
-                                <span>topshop</span>
-                                <a href="single-product-details.html">
-                                    <h6>Poplin Displaced Wrap Dress</h6>
-                                </a>
+                                <h6>Knot Front Mini Dress</h6>
                                 <p class="product-price">$80.00</p>
 
                                 <!-- Hover Content -->
                                 <div class="hover-content">
                                     <!-- Add to Cart -->
                                     <div class="add-to-cart-btn">
-                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                        <div onclick="crear_producto('vintage', 1)" class="btn essence-btn">Ver más</div>
                                     </div>
                                 </div>
                             </div>
@@ -254,33 +249,24 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product-3.jpg" alt="">
+                                <img src="img/product-img/product-1.jpg" alt="">
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product-4.jpg" alt="">
-
-                                <!-- Product Badge -->
-                                <div class="product-badge offer-badge">
-                                    <span>-30%</span>
-                                </div>
-
-                                <!-- Favourite -->
-                                <div class="product-favourite">
-                                    <a href="#" class="favme fa fa-heart"></a>
-                                </div>
+                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
+                                    <!-- Product Badge 
+                                    <div class="product-badge offer-badge">
+                                        <span>-30%</span>
+                                    </div>-->
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
-                                <span>mango</span>
-                                <a href="single-product-details.html">
-                                    <h6>PETITE Crepe Wrap Mini Dress</h6>
-                                </a>
-                                <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+                                <h6>Knot Front Mini Dress</h6>
+                                <p class="product-price">$80.00</p>
 
                                 <!-- Hover Content -->
                                 <div class="hover-content">
                                     <!-- Add to Cart -->
                                     <div class="add-to-cart-btn">
-                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                        <div onclick="crear_producto('vintage', 2)" class="btn essence-btn">Ver más</div>
                                     </div>
                                 </div>
                             </div>
@@ -290,33 +276,24 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="img/product-img/product-4.jpg" alt="">
+                                <img src="img/product-img/product-1.jpg" alt="">
                                 <!-- Hover Thumb -->
-                                <img class="hover-img" src="img/product-img/product-5.jpg" alt="">
-
-                                   <!-- Product Badge -->
-                                   <div class="product-badge offer-badge">
-                                    <span>-30%</span>
-                                </div>
-
-                                <!-- Favourite -->
-                                <div class="product-favourite">
-                                    <a href="#" class="favme fa fa-heart"></a>
-                                </div>
+                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
+                                    <!-- Product Badge 
+                                    <div class="product-badge offer-badge">
+                                        <span>-30%</span>
+                                    </div>-->
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
-                                <span>mango</span>
-                                <a href="single-product-details.html">
-                                    <h6>PETITE Belted Jumper Dress</h6>
-                                </a>
+                                <h6>Knot Front Mini Dress</h6>
                                 <p class="product-price">$80.00</p>
 
                                 <!-- Hover Content -->
                                 <div class="hover-content">
                                     <!-- Add to Cart -->
                                     <div class="add-to-cart-btn">
-                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                        <div onclick="crear_producto('vintage', 3)" class="btn essence-btn">Ver más</div>
                                     </div>
                                 </div>
                             </div>

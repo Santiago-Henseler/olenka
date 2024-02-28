@@ -12,7 +12,10 @@ function pagos(total, carrito){
         var telefono = document.getElementById("telefono").value;
         var mail = document.getElementById("mail").value;
 
-        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == '') return;
+        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == ''){
+            swal("Completa toda la información antes del pago", "", "info");
+            return;
+        } 
 
         const datos_personales = {
             nombre: nombre,

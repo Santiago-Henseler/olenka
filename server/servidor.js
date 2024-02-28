@@ -34,21 +34,24 @@ app.get("/success", (req, res)=>{
     let CARRITO = global.pedido.carrito;
     let datos = global.pedido.datos;
 
+    let total = 0;
+
     html += `<html>
             <body>
                 <p>Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
                 A entregar en ${datos.domicilio}</p>
                 <br>
-                <p>Productos:</p>
+                <p><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></p>
                 <br>
                 <ul>
-                    <li><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></li>`
+                    `
 
     for(let i in CARRITO){
-        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["cantidad"]}</span><span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span></li> `
+        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>$${CARRITO[i]["cantidad"]}</span> </li> `
+        total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
 
-    html += `</ul></body></html>`
+    html += `</ul><p>Total: <span>${total}</span></p></body></html>`
 
     const mailOptions = {
         from: 'olenkaenvios@gmail.com',
@@ -60,9 +63,9 @@ app.get("/success", (req, res)=>{
     // Envía el correo electrónico
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-        console.error(error);
+            console.error(error);
         } else {
-        console.log('Correo enviado: ' + info.response);
+            console.log('Pago enviado ' + total);
         }
     });
 

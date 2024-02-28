@@ -113,6 +113,8 @@ function borrar(producto, talle){
     document.getElementById(producto).remove();
 
     cargar_cant_producto();
+
+    swal("Producto borrado del carrito", "", "success");
 }
 
 function existe_producto(producto, talle, cantidad){
@@ -329,7 +331,7 @@ function aniadir_al_carrito(type, id){
         <!-- Single Cart Item -->
         <div class="single-cart-item" id="${tipo[parseInt(id)][0]}">
             <a href="#" class="product-image">
-                <img src="img/product-img/product-3.jpg" class="cart-thumb" alt="">
+                <img src="${tipo[parseInt(id)][3][0]}" class="cart-thumb" alt="">
                 <!-- Cart Item Desc -->
                 <div class="cart-item-desc">
                     <button type="button" value="${tipo[parseInt(id)][0]}" onclick="borrar(this.value, '${talle}')" ><span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span></button>
@@ -344,6 +346,8 @@ function aniadir_al_carrito(type, id){
     }
 
     cargar_cant_producto();
+
+    swal("Producto añiadido al carrito", "", "success");
 }
 
 function tipo_producto(type){
@@ -436,9 +440,9 @@ function crear_producto(type, id){
 
         <!-- Single Product Thumb -->
             <div class="single_product_thumb clearfix" id="slider-container">
-                <img src="img/product-img/product-big-1.jpg" alt="">
-                <img src="img/product-img/product-big-2.jpg" alt="">
-                <img src="img/product-img/product-big-3.jpg" alt="">
+                <img src="${producto[id][3][0]}" alt="">
+                <img src="${producto[id][3][1]}" alt="">
+                <img src="${producto[id][3][2]}" alt="">
             </div>
 
         <!-- Single Product Description -->
@@ -562,9 +566,9 @@ function crear_seccion(type){
             <div class="single-product-wrapper">
                 <!-- Product Image -->
                 <div class="product-img">
-                    <img src="img/product-img/product-9.jpg" alt="">
+                    <img src="${productos[i+1][3][0]}" alt="">
                     <!-- Hover Thumb -->
-                    <img class="hover-img" src="img/product-img/product-1.jpg" alt="">
+                    <img class="hover-img" src="${productos[i+1][3][1]}" alt="">
 
                     
                 </div>

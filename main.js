@@ -325,8 +325,23 @@ function tipo_producto(type){
     if(type == "remeras"){
         return remeras;
     }
-    if(type == "vintage"){
-        return vintaje;
+    if(type == "buzos"){
+        return buzos;
+    }
+    if(type == "overol"){
+        return overols;
+    }
+    if(type == "accesorios"){
+        return accesorios;
+    }
+    if(type == "vestidos"){
+        return vestidos;
+    }
+    if(type == "camperas"){
+        return camperas;
+    }
+    if(type == "blazer"){
+        return blazer;
     }
 }
 
@@ -387,19 +402,28 @@ function crear_producto(type, id){
               transform: translate3d(0,0,0);
             }
             25%,
-            48% {
+            38% {
               transform: translate3d(-100%,0,0);
             }
-            50%,
-            73% {
+            48%,
+            54% {
               transform: translate3d(-200%,0,0);
             }
-            75%,
-            98% {
-              transform: translate3d(-100%,0,0);
+            65%,
+            70% {
+              transform: translate3d(-300%,0,0);
             }
-            100% {
-              transform: translate3d(0,0,0);
+            78%,
+            82% {
+              transform: translate3d(-200,0,0);
+            }
+            85%,
+            92%{
+                transform: translate3d(-100,0,0);
+            }
+            98%,
+            100%{
+                transform: translate3d(0,0,0);
             }
           }
 
@@ -413,6 +437,7 @@ function crear_producto(type, id){
                 <img src="${producto[id][3][0]}" alt="">
                 <img src="${producto[id][3][1]}" alt="">
                 <img src="${producto[id][3][2]}" alt="">
+                <img src="${producto[id][3][3]}" alt="">
             </div>
 
         <!-- Single Product Description -->
@@ -545,7 +570,7 @@ function crear_seccion(type){
 
                 <!-- Product Description -->
                 <div class="product-description">
-                    <span>Marca</span>
+                    <span></span>
                     
                         <h6>${productos[i+1][0]}</h6>
                     

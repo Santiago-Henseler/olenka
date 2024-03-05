@@ -27,7 +27,7 @@ function enviar_mensaje() {
     var texto = `Hola me llamo ${nombre}, 
     y tengo la siguiente consulta: ${txt}`;
 
-    var tel = +5411;
+    var tel = +5491161625030;
 
     var url = `https://api.whatsapp.com/send?phone=${tel}&text=${texto}`;
 
@@ -222,58 +222,28 @@ function checkout(){
                         </ul>
 
                         <div id="accordion" role="tablist" class="mb-4">
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
-                                    <div class="form-check">
-                                        <input class="form-check-input"  type="radio" name="exampleRadios" id="op1" value="Quilmes">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                          <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Retiro en quilmes</a>
-                                        </label>
-                                      </div>
-                 
-                                </div>
-
-                                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            
+                                <div >
+                                <input class="form-check-input"  type="radio" name="retiro" id="op1" value="Quilmes">Retiro en Quilmes
                                     <div class="card-body">
                                         <p>Retiro en quilmes en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
-                                    <div class="form-check">
-                                        <input class="form-check-input"  type="radio" name="exampleRadios" id="op2" value="Capital">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">Retiro en capital</a>
-                                        </label>
-                                    </div>
-                
-                                </div>
 
-                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Retiro en capital en la calle ..... de ... a ....</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
-                                    <div class="form-check">
-                                        <input class="form-check-input" onclick="alert(calcular_envio())"  type="radio" name="exampleRadios" id="op3" value="Envio">
-                                        <label class="form-check-label" for="exampleRadios1">
-                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseTre">Envio a domicilio</a>
-                                        </label>
-                                    </div>
-                
-                                </div>
-
-                                <div id="collapseTre" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div >
+                                <input class="form-check-input"  type="radio" name="retiro" id="op1" value="Capital">Retiro en Capital
                                     <div class="card-body">
                                         <p>Retiro en quilmes en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
-                            </div>
-                           
+
+                                <div >
+                                <input class="form-check-input"  type="radio" name="retiro" id="op1" value="Domicilio">Envio a domicilio
+                                    <div class="card-body">
+                                        <p>Retiro en quilmes en la calle ..... de ... a ....</p>
+                                    </div>
+                                </div>
+                            
                         </div>
 
                         <div id="btn-checkout-mp" class="btn essence-btn">PAGAR</div>

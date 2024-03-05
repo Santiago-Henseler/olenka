@@ -12,7 +12,10 @@ function pagos(total, carrito){
         var telefono = document.getElementById("telefono").value;
         var mail = document.getElementById("mail").value;
 
-        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == ''){
+        var radios = document.getElementsByName("retiro");
+        var selected = Array.from(radios).find(radio => radio.checked).value;
+
+        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == '' || selected == ''){
             swal("Completa toda la información antes del pago", "", "info");
             return;
         } 
@@ -24,6 +27,7 @@ function pagos(total, carrito){
             cp:cp,
             telefono:telefono,
             mail:mail,
+            envio:selected,
         }
        
         const orderData = {
@@ -33,7 +37,9 @@ function pagos(total, carrito){
             datos:datos_personales,
             carrito:carrito,
         };
+
         try{
+            swal("Creando cupon de pago, porfavor espere", "", "info");
             const response = await fetch("https://olenka-fa9w.onrender.com/a", {
                 method: "POST",
                 headers: {

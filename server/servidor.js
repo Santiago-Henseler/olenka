@@ -39,7 +39,7 @@ app.get("/success", (req, res)=>{
     html += `<html>
             <body>
                 <p>Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
-                A entregar en ${datos.domicilio}</p>
+                Domicilio en ${datos.domicilio}, codigo postal ${datos.cp} a entregar ${datos.envio}</p>
                 <br>
                 <p><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></p>
                 <br>

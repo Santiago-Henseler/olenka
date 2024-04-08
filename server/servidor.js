@@ -24,7 +24,7 @@ app.listen(port, ()=>{
 });
 
 app.get("/", (req, res)=>{
-    res.send("Que haces aca wachin?")
+    res.send("")
 })
 
 app.get("/success", (req, res)=>{
@@ -41,13 +41,13 @@ app.get("/success", (req, res)=>{
                 <p>Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
                 Domicilio en ${datos.domicilio}, codigo postal ${datos.cp} a entregar en ${datos.envio}</p>
                 <br>
-                <p><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></p>
+                <p><span>Producto</span> <span>Talle</span> <span>Cantidad</span><span>Color</span> <span>Total</span></p>
                 <br>
                 <ul>
                     `
 
     for(let i in CARRITO){
-        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>$${CARRITO[i]["cantidad"]}</span> </li> `
+        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span><span>${CARRITO[i]["color"]}</span><span>$${CARRITO[i]["cantidad"]}</span> </li> `
         total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
 
@@ -55,7 +55,7 @@ app.get("/success", (req, res)=>{
 
     const mailOptions = {
         from: 'olenkaenvios@gmail.com',
-        to: 'destinatario@example.com',
+        to: 'Griseldabparedes@hotmail.com',
         subject: `Compra realizada por ${global.pedido.datos.nombre}`,
         html: html,
     };

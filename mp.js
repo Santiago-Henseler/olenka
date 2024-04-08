@@ -12,10 +12,10 @@ function pagos(total, carrito){
         var telefono = document.getElementById("telefono").value;
         var mail = document.getElementById("mail").value;
 
-        var radios = document.getElementsByName("retiro");
-        var selected = Array.from(radios).find(radio => radio.checked).value;
+        //var radios = document.getElementsByName("retiro");
+        //var selected = Array.from(radios).find(radio => radio.checked).value;
 
-        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == '' || selected == ''){
+        if(nombre == '' || apellido == '' || domicilio == '' || cp == '' || telefono == '' || mail == ''){
             swal("Completa toda la información antes del pago", "", "info");
             return;
         } 
@@ -27,7 +27,6 @@ function pagos(total, carrito){
             cp:cp,
             telefono:telefono,
             mail:mail,
-            envio:selected,
         }
        
         const orderData = {

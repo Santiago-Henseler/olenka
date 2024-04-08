@@ -8,11 +8,12 @@ const cpOrigen = 1878;
 var CARRITO = [];
 
 class creador {
-    constructor(nombre,talle, precio, cantidad) {
+    constructor(nombre,talle, precio, cantidad, color) {
         this.nombre = nombre;
         this.talle = talle;
         this.precio = precio;
         this.cantidad = cantidad;
+        this.color = color;
     }
 }
 
@@ -80,7 +81,6 @@ function inicio(){
 
     document.getElementById("uno").style.display = "block";
     document.getElementById("categoria").style.display = "block";
-    document.getElementById("ofertas").style.display = "block";
 
     return;
 }
@@ -103,26 +103,27 @@ function cargar_cant_producto(){
     document.getElementById("Total").innerHTML = `$${total}`;
 }
 
-function borrar(producto, talle){
+function borrar(producto, talle, color, id){
     for (i in CARRITO) {
-        if (CARRITO[i]["nombre"] == producto  && CARRITO[i]["talle"] == talle) {
+        if (CARRITO[i]["nombre"] == producto  && CARRITO[i]["talle"] == talle && CARRITO[i]["color"] == color) {
             CARRITO.splice(i, 1);
+            
         }
     }
     
-    document.getElementById(producto).remove();
+    document.getElementById(id).remove();
 
     cargar_cant_producto();
 
     swal("Producto borrado del carrito", "", "success");
 }
 
-function existe_producto(producto, talle, cantidad){
+function existe_producto(producto, talle, cantidad, color){
 
     let existe = false;
 
     for (i in CARRITO) {
-        if (CARRITO[i]["nombre"] == producto && CARRITO[i]["talle"] == talle) {
+        if (CARRITO[i]["nombre"] == producto && CARRITO[i]["talle"] == talle && CARRITO[i]["color"] == color) {
             existe = true;
             CARRITO[i]["cantidad"] += cantidad;
             document.getElementById(`cantidad${CARRITO[i]["nombre"]}${talle}`).innerHTML = `Cantidad: ${CARRITO[i]["cantidad"]}`;
@@ -149,7 +150,6 @@ function checkout(){
 
     document.getElementById("uno").style.display = "none";
     document.getElementById("categoria").style.display = "none";
-    document.getElementById("ofertas").style.display = "none";
 
     if(hay_seccion){
         let elemento = document.getElementById("seccion_prod");
@@ -218,11 +218,11 @@ function checkout(){
                         </div>
 
                         <ul id="list_prod" class="order-details-form mb-4">
-                            <li><span>Producto</span> <span>Talle</span> <span>Cantidad</span> <span>Total</span></li>
+                            <li><span>Producto</span> <span>Talle</span> <span>Color</span> <span>Cantidad</span> <span>Total</span></li>
                         </ul>
 
                         <div id="accordion" role="tablist" class="mb-4">
-                            
+                        <!-- ##### Welcome Area Start #####
                                 <div >
                                 <input class="form-check-input"  type="radio" name="retiro" id="op1" value="Quilmes">Retiro en Quilmes
                                     <div class="card-body">
@@ -243,6 +243,8 @@ function checkout(){
                                         <p>Retiro en quilmes en la calle ..... de ... a ....</p>
                                     </div>
                                 </div>
+
+                                -->
                             
                         </div>
 
@@ -273,7 +275,7 @@ function checkout(){
     let total = 0;
 
     for(i in CARRITO){
-        list_prod.innerHTML += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["cantidad"]}</span><span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span></li> `
+        list_prod.innerHTML += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["color"]}</span><span>${CARRITO[i]["cantidad"]}</span><span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span></li> `
         total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
 
@@ -287,28 +289,37 @@ function aniadir_al_carrito(type, id){
     let tipo = tipo_producto(type);
     let talle = document.getElementById("talle").value;
     let cantidad = Number(document.getElementById("cantidad").value);
+    let colorLabel = document.getElementById("color");
+    let color = "";
+
+    if(document.body.contains(colorLabel)){
+        color = colorLabel.value;
+    }
+
+    if(talle == ""){
+        talle = "unico"
+    }
 
 
-    if(!existe_producto(tipo[parseInt(id)][0],talle, 1)){
+    if(!existe_producto(tipo[parseInt(id)][0],talle, 1, color)){
 
-        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], cantidad);
+        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], cantidad, color);
 
         CARRITO.push(producto);
 
         let carritoHTML = document.getElementById("cart-list");
 
         carritoHTML.innerHTML += `
-        <!-- Single Cart Item -->
-        <div class="single-cart-item" id="${tipo[parseInt(id)][0]}">
+        <div class="single-cart-item" id="${tipo[parseInt(id)][0]}${color}${talle}">
             <a href="#" class="product-image">
                 <img src="${tipo[parseInt(id)][3][0]}" class="cart-thumb" alt="">
-                <!-- Cart Item Desc -->
                 <div class="cart-item-desc">
-                    <button type="button" value="${tipo[parseInt(id)][0]}" onclick="borrar(this.value, '${talle}')" ><span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span></button>
+                    <button type="button" value="${tipo[parseInt(id)][0]}${color}${talle}" onclick="borrar('${tipo[parseInt(id)][0]}','${talle}', '${color}',this.value)" ><span class="product-remove"><i class="fa fa-close" aria-hidden="true"></i></span></button>
                     
                     <h6>${tipo[parseInt(id)][0]}</h6>
                     <p class="size">Talle: ${talle}</p>
                     <p class="color" id="cantidad${tipo[parseInt(id)][0]}${talle}">Cantidad: ${cantidad}</p>
+                    <p class="color" id="cantidad${tipo[parseInt(id)][0]}${color}">Color: ${color}</p>
                     <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1] * cantidad}</p>
                 </div>
             </a>
@@ -454,12 +465,12 @@ function crear_producto(type, id){
                     <!-- Select Box -->
                     <div class="select-box d-flex mt-50 mb-30">
                         <select name="select" id="talle" class="mr-5">
-                            <option value="xl">Size: XL</option>
-                            <option value="x">Size: X</option>
-                            <option value="m">Size: M</option>
-                            <option value="s">Size: S</option>
                         </select>
                          
+                        <select name="select" id="color" class="mr-5">
+                            
+                        </select>
+
                         <select name="select" id="cantidad">
                             <option value="1">Cantidad: 1</option>
                             <option value="2">Cantidad: 2</option>
@@ -476,6 +487,29 @@ function crear_producto(type, id){
             </div>
         </div>
     </section>`);
+
+    var tal = producto[id][5].splice(",");
+
+    if(tal.length > 0){
+
+        for(var i = 0; i < tal.length; i++ ){
+            document.getElementById("talle").innerHTML+= `<option value="${tal[i]}">Size: ${tal[i]}</option>`
+        }
+
+    }else{
+        document.getElementById("talle").style.display = 'none';
+    }
+
+    var col = producto[id][4].splice(",");
+
+    if(col.length > 0){
+        for(var i = 0; i < col.length; i++ ){
+            document.getElementById("color").innerHTML+= `<option value="${col[i]}">Color: ${col[i]}</option>`
+        }
+    }else{
+        document.getElementById("color").style.display = 'none';
+    }
+
 
     hay_producto = true;
 }
@@ -510,7 +544,6 @@ function crear_seccion(type){
 
     document.getElementById("uno").style.display = "none";
     document.getElementById("categoria").style.display = "none";
-    document.getElementById("ofertas").style.display = "none";
    
     
     let productos = tipo_producto(type);

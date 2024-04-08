@@ -43,10 +43,9 @@
                     <div class="classycloseIcon">
                         <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                     </div>
-                   
+                    <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                             <!-- Nav Start 
                             <li><a href="#">Ropa</a>
                                 <div class="megamenu">
                                     <ul class="single-mega cn-col-4">
@@ -64,42 +63,45 @@
                                     </ul>
                                 
                                 </div>
-                            </li>-->
+                            </li>
                             <li><a href="#contact">Contacto</a></li>
                         </ul>
                     </div>
+                    <!-- Nav End -->
                 </div>
             </nav>
 
-            <!-- Header Meta Data 
+            <!-- Header Meta Data -->
             <div class="header-meta d-flex clearfix justify-content-end">
-  
+                <!-- Cart Area -->
                 <div id="cart1" class="cart-area" >
                     <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span id="cantprod1">0</span></a>
                 </div>
-            </div>-->
+            </div>
 
         </div>
     </header>
+    <!-- ##### Header Area End ##### -->
 
-         <!-- Header Meta Data 
+    <!-- ##### Right Side Cart Area ##### -->
     <div class="cart-bg-overlay"></div>
 
     <div class="right-side-cart-area" >
 
- 
+        <!-- Cart Button -->
         <div class="cart-button" >
             <a href="#" id="rightSideCart"><img src="img/core-img/bag.svg" alt=""> <span id="cantprod2">0</span></a>
         </div>
 
         <div class="cart-content d-flex">
 
+            <!-- Cart List Area -->
             <div id="cart-list" class="cart-list">
                 
                 
             </div>
 
-            
+            <!-- Cart Summary -->
             <div class="cart-amount-summary">
 
                 <h2>Carrito</h2>
@@ -112,22 +114,13 @@
             </div>
         </div>
     </div>
-    -->
+    <!-- ##### Right Side Cart End ##### -->
 
 <main id="main">
-    <center>
-        <hr>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title"> Página en construcción</h5>
-          <p class="card-text">Actualmente esta página esta en desarrollo</p>
-          <a href="https://www.instagram.com/olenkaok1/?hl=es" class="btn btn-primary">Ver los productos de Olenka</a>
-        </div>
-      </div>
-    </center>   
 
 
-    <!-- 
+
+    <!-- ##### Welcome Area Start ##### -->
     <section id="uno" class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -135,17 +128,19 @@
                     <div class="hero-content">
                         <h6></h6>
                         <h2>Nueva colección</h2>
-                        <a href="#ofertas" class="btn essence-btn">ver colleción</a>
+                        <a onclick="crear_seccion('remeras')" style="color: #fff;" class="btn essence-btn">ver colleción</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- ##### Welcome Area End ##### -->
 
+    <!-- ##### Top Catagory Area Start ##### -->
     <div id="categoria" class="top_catagory_area section-padding-80 clearfix">
         <div class="container">
             <div class="row justify-content-center">
-     
+                <!-- Single Catagory -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
                         <div class="catagory-content">
@@ -158,13 +153,18 @@
                         <div class="card-body">
                             <ul class="single-mega cn-col-4">
                                 <li class="title">COLECCION COMPLETA</li>
-                                <li onclick="crear_seccion('remeras')">Remera</li>
-                                <li onclick="crear_seccion('vintage')">Remera</li>
+                                <li onclick="crear_seccion('remeras')">Remeras</li>
+                                <li onclick="crear_seccion('buzos')">Buzos</li>
+                                <li onclick="crear_seccion('overol')">Overol</li>
+                                <li onclick="crear_seccion('vestidos')">Vestidos</li>
+                                <li onclick="crear_seccion('blazer')">Blazer</li>
+                                <li onclick="crear_seccion('camperas')">Camperas</li>
+                                <li onclick="crear_seccion('accesorios')">Accesorios</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-   
+                <!-- Single Catagory -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
                         <div class="catagory-content">
@@ -174,8 +174,8 @@
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <ul class="single-mega cn-col-4">
-                                <li class="title">COLECCION COMPLETA</li>
-                                <li onclick="crear_seccion('vintage')">Remera</li>
+                                <li class="title">NIÑOS</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -183,136 +183,10 @@
             </div>
         </div>
     </div>
+    <!-- ##### Top Catagory Area End ##### -->
 
-    <section id="ofertas" class="new_arrivals_area section-padding-80 clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <hr>
-                        <h2>COLECCION VINTAGE</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="popular-products-slides owl-carousel">
-
-                        <div class="single-product-wrapper">
-                
-                            <div class="product-img">
-                                <img src="img/product-img/product-1.jpg" alt="">
-                     
-                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                                    Product Badge 
-                                    <div class="product-badge offer-badge">
-                                        <span>-30%</span>
-                                    </div>
-                            </div>
-         
-                            <div class="product-description">
-                                <h6>Knot Front Mini Dress</h6>
-                                <p class="product-price">$80.00</p>
-
-                                <div class="hover-content">
-                      
-                                    <div class="add-to-cart-btn">
-                                        <div onclick="crear_producto('vintage', 1)" class="btn essence-btn">Ver más</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-              
-                        <div class="single-product-wrapper">
-               
-                            <div class="product-img">
-                                <img src="img/product-img/product-1.jpg" alt="">
-                    
-                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                                    Product Badge 
-                                    <div class="product-badge offer-badge">
-                                        <span>-30%</span>
-                                    </div>
-                            </div>
-                             Product Description 
-                            <div class="product-description">
-                                <h6>Knot Front Mini Dress</h6>
-                                <p class="product-price">$80.00</p>
-
-                                 Hover Content 
-                                <div class="hover-content">
-                                     Add to Cart 
-                                    <div class="add-to-cart-btn">
-                                        <div onclick="crear_producto('vintage', 1)" class="btn essence-btn">Ver más</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         Single Product 
-                        <div class="single-product-wrapper">
-                             Product Image 
-                            <div class="product-img">
-                                <img src="img/product-img/product-1.jpg" alt="">
-                                 Hover Thumb 
-                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                                     Product Badge 
-                                    <div class="product-badge offer-badge">
-                                        <span>-30%</span>
-                                    </div>
-                            </div>
-                             Product Description 
-                            <div class="product-description">
-                                <h6>Knot Front Mini Dress</h6>
-                                <p class="product-price">$80.00</p>
-
-                                 Hover Content 
-                                <div class="hover-content">
-                                     Add to Cart 
-                                    <div class="add-to-cart-btn">
-                                        <div onclick="crear_producto('vintage', 2)" class="btn essence-btn">Ver más</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         Single Product 
-                        <div class="single-product-wrapper">
-                             Product Image 
-                            <div class="product-img">
-                                <img src="img/product-img/product-1.jpg" alt="">
-                                 Hover Thumb 
-                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                                     Product Badge 
-                                    <div class="product-badge offer-badge">
-                                        <span>-30%</span>
-                                    </div>
-                            </div>
-                             Product Description 
-                            <div class="product-description">
-                                <h6>Knot Front Mini Dress</h6>
-                                <p class="product-price">$80.00</p>
-
-                                 Hover Content 
-                                <div class="hover-content">
-                                     Add to Cart 
-                                    <div class="add-to-cart-btn">
-                                        <div onclick="crear_producto('vintage', 3)" class="btn essence-btn">Ver más</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     ##### New Arrivals Area End ##### 
+   
+    
 
     <!-- ##### Brands Area Start ##### 
     <div class="brands-area d-flex align-items-center justify-content-between">
@@ -341,7 +215,7 @@
             <img src="img/core-img/brand6.png" alt="">
         </div>
     </div>-->
-    <!-- ##### Brands Area End ##### 
+    <!-- ##### Brands Area End ##### -->
 
 
     <section id="contact"  class="contact">
@@ -363,7 +237,7 @@
                             <p>123 quilmes</p>
                         </div>
                     </a>
-                </div><!-- End Info Item 
+                </div><!-- End Info Item -->
 
                 
 
@@ -375,7 +249,7 @@
                             <p>contacto@contacto.com</p>
                         </div>
                     </a>
-                </div><!-- End Info Item 
+                </div><!-- End Info Item -->
 
                 <div class="col-lg-3 col-md-6">
                     <div class="info-item  d-flex flex-column justify-content-center align-items-center">
@@ -392,7 +266,7 @@
 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6558.843253875013!2d-58.25804264434066!3d-34.71976524583812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e40864ce019%3A0xb46bf0e5f8abafc6!2sQuilmes%20Peatonal!5e0!3m2!1ses-419!2sar!4v1707923088336!5m2!1ses-419!2sar"
                             frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-                </div><!-- End Google Maps 
+                </div><!-- End Google Maps -->
 
                 <div class="col-lg-6">
                    
@@ -407,7 +281,7 @@
                
                         <div class="text-center"><button type="submit" style="border-color: gray;" class="btn btn-light " onclick="enviar_mensaje()">Enviar mensaje</button></div>
                     
-                </div><!-- End Contact Form 
+                </div><!-- End Contact Form -->
                 
             </div>
 
@@ -416,22 +290,22 @@
 </main>
     <br>
 
-    <!-- ##### Footer Area Start ##### 
+    <!-- ##### Footer Area Start ##### -->
     <footer id="footer" class="footer_area clearfix">
         <div class="container">
             <div class="row">
-                <!-- Single Widget Area 
+                <!-- Single Widget Area -->
                 <div class="col-12 col-md-6">
                     <div class="single_widget_area d-flex mb-30">
-                        <!-- Logo 
+                        <!-- Logo -->
                         <div class="footer-logo mr-50">
                             <a href="#"><img src="imagenes/logo.png" style="height: 35px; border-radius: 1px;" class="img-fluid" alt=""></a>
                         </div>
-                        <!-- Footer Menu 
+                        <!-- Footer Menu -->
                
                     </div>
                 </div>
-                <!-- Single Widget Area 
+                <!-- Single Widget Area -->
                 <div class="col-12 col-md-6">
                     <div class="single_widget_area mb-30">
                         <ul class="footer_widget_menu">
@@ -463,7 +337,7 @@
 
 
     </footer>
-    ##### Footer Area End ##### -->
+    <!-- ##### Footer Area End ##### -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>

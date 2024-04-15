@@ -1,5 +1,5 @@
 function pagos(total, carrito){
-    const mp = new MercadoPago('APP_USR-ec551596-b82e-4a71-a24a-c916181e073b', {
+    const mp = new MercadoPago('APP_USR-9a55527c-bd17-4f81-a0f9-d77f0ffb3e01', {
         locale: "es-AR",
     });
     

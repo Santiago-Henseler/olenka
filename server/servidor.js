@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const client = new MercadoPagoConfig({ accessToken:  process.env.TokenMp || 'APP_USR-4523751909000270-021516-39075fd86f9087b64a1d8b567fbf1991-689252510' });
+const client = new MercadoPagoConfig({ accessToken:  process.env.TokenMp || 'APP_USR-2999873462345921-011012-fc49e1db74284c44996d7a0808f2d62e-390171953' });
 
 const app = express();
 const port = process.env.port || 3000;
@@ -28,6 +28,26 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/success", (req, res)=>{
+
+    var texto = `Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
+    Domicilio en ${datos.domicilio}, codigo postal ${datos.cp} a entregar en ${datos.envio}.`;
+
+    let total = 0;
+
+    for(let i in CARRITO){
+        texto += ` ${CARRITO[i]["nombre"]} - ${CARRITO[i]["talle"]} - ${CARRITO[i]["color"]} - ${CARRITO[i]["cantidad"]} - ${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}`;
+        total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
+    }
+
+    texto += "total $${total}"
+
+    var tel = +5491161625030;
+
+    var url = `https://api.whatsapp.com/send?phone=${tel}&text=${texto}`;
+
+    res.redirect(url);
+
+    /* 
 
     let html = '';
 
@@ -70,6 +90,7 @@ app.get("/success", (req, res)=>{
     });
 
     res.redirect('https://santiago-henseler.github.io/olenka/success.html');
+    */
 })
 
 app.post("/a", async (req, res)=>{
@@ -88,7 +109,7 @@ app.post("/a", async (req, res)=>{
             back_urls:{
                 success:`https://olenka-fa9w.onrender.com/success`,
                 failure:"https://santiago-henseler.github.io/olenka/error.html",
-                pending:"https://www.youtube.com/",
+                pending:"",
             },
             auto_return: "approved",
         };

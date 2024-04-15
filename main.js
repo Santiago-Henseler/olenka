@@ -19,8 +19,6 @@ class creador {
 
 function enviar_mensaje() {
 
-    calcular_envio()
-
     var nombre = document.getElementById("nombre").value;
 
     var txt = document.getElementById("campo1").value;
@@ -134,6 +132,17 @@ function existe_producto(producto, talle, cantidad, color){
     return existe;
 }
 
+ async function prenderServer(){
+    const response = await fetch("https://olenka-fa9w.onrender.com/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+    const preference = await response.json();
+}
+
 function checkout(){
 
     window.scrollTo(0,0);
@@ -143,6 +152,8 @@ function checkout(){
     }
 
     hay_checkout = true;
+
+    prenderServer();
 
     document.getElementById("menu1").style.display = "none";
     document.getElementById("menu2").style.display = "none";

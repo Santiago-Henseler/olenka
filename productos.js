@@ -1,5 +1,5 @@
 const remeras = {
-    0: 14,
+    0: 19,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -15,6 +15,10 @@ const remeras = {
    13: ["Remeron mega blanco honguitos", 45000, "", ["imagenes/remeras/remeron13-1.jpeg", "imagenes/remeras/remeron13-3.jpeg", "imagenes/remeras/remeron13-2.jpeg", "imagenes/remeras/remeron13-1.jpeg"], [], ["S", "M", "L"]],
    14: ["Remera MAXI Smile", 25000, "", ["imagenes/remeras/remeron14-1.jpeg", "imagenes/remeras/remeron14-3.jpeg", "imagenes/remeras/remeron14-2.jpeg", "imagenes/remeras/remeron14-1.jpeg"], ["Neon","Naranja"], [1, 2, 3]],
    15: ["Remera MAXI gajos", 45000, "", ["imagenes/remeras/remeron15-1.jpeg", "imagenes/remeras/remeron15-3.jpeg", "imagenes/remeras/remeron15-2.jpeg", "imagenes/remeras/remeron15-1.jpeg"], ["Blanco", "Negro",  "Gris" ,"Verde" , "Fuxia"], ["S", "M", "L"]],
+   16: ["Remeron Barby con chicle globo", 29000, "", ["imagenes/remeras/remeron16-1.jpeg", "imagenes/remeras/remeron16-2.jpeg", "imagenes/remeras/remeron16-1.jpeg", "imagenes/remeras/remeron16-2.jpeg"], ["Blanco", "Negro", "Fuxia"], []],
+   17: ["Remera básica Olenka Sex Pistols", 29000, "", ["imagenes/remeras/remeron17-1.jpeg", "imagenes/remeras/remeron17-2.jpeg", "imagenes/remeras/remeron17-3.jpeg", "imagenes/remeras/remeron17-2.jpeg"], ["Blanco", "Negro","Gris","Lila", "Fuxia"], [1,2,3]],
+   18: ["Remera básica Olenka botas", 29000, "", ["imagenes/remeras/remeron18-1.jpeg", "imagenes/remeras/remeron18-2.jpeg", "imagenes/remeras/remeron18-3.jpeg", "imagenes/remeras/remeron18-2.jpeg"], ["Blanco", "Negro","Gris","Lila"], [1,2,3]],
+   19: ["Remera básica Virgen de Guadalupe!", 45000, "", ["imagenes/remeras/remeron19-1.jpeg", "imagenes/remeras/remeron19-1.jpeg", "imagenes/remeras/remeron19-1.jpeg", "imagenes/remeras/remeron19-1.jpeg"], ["Blanco", "Negro","Gris","Rojo", "Beige"], ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]],
 
 }
 
@@ -33,7 +37,7 @@ const overols = {
 }
 
 const accesorios = {
-    0: 26,
+    0: 30,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -60,18 +64,24 @@ const accesorios = {
    24: ["Collar perlas y alfileres", 15000, "", ["imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg", "imagenes/accesorios/accesorio18-1jpeg"], [], []],
    25: ["Collar perlas doble", 35000, "", ["imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg", "imagenes/accesorios/accesorio19-1jpeg"], [], []],
    26: ["Tote crochet", 25000, "", ["imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg", "imagenes/accesorios/accesorio20-1jpeg"], ["Verde", "Naranja"], []],
-   26: ["Collar Choker perlas y flor", 8000, "", ["imagenes/accesorios/accesorio21-1.jpeg","imagenes/accesorios/accesorio21-2.jpeg","imagenes/accesorios/accesorio21-3.jpeg", "imagenes/accesorios/accesorio21-1jpeg"], ["blanco", "Negro", "Rosa", "Fuxia", "azul", "Verde", "Violeta"], []],
+   27: ["Cartera mini bag crochet con lentejuelas", 25000, "", ["imagenes/accesorios/accesorio21-1.jpeg","imagenes/accesorios/accesorio21-2.jpeg","imagenes/accesorios/accesorio21-1.jpeg", "imagenes/accesorios/accesorio21-2jpeg"], [], []],
+   28: ["Aros frutillas verdes ", 5000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
+   29: ["Pañuelo bandana azul ", 6000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
+   30: ["Cartera Crochet manija plástica ", 25000, "", ["imagenes/accesorios/accesorio23-1.jpeg","imagenes/accesorios/accesorio23-2.jpeg","imagenes/accesorios/accesorio23-3.jpeg", "imagenes/accesorios/accesorio23-1jpeg"], [], []],
   
 }
 
 const vestidos = {
-    0: 6,
-    1: ["Vestido bandana", 65000, "Pañuelos bandana multicolor", ["imagenes/vestidos/vestido1-1.jpeg","imagenes/vestidos/vestido1-2.jpeg","imagenes/vestidos/vestido1-3.jpeg", "iimagenes/vestidos/vestido1-1.jpeg"], [], []],
-    2: ["Vestido bandana color", 65000, "", ["imagenes/vestidos/vestido2-1.jpeg","imagenes/vestidos/vestido2-2.jpeg","imagenes/vestidos/vestido2-3.jpeg", "iimagenes/vestidos/vestido2-1.jpeg"], [], []],
-    3: ["Vestido bandana rosa", 65000, "", ["imagenes/vestidos/vestido3-1.jpeg","imagenes/vestidos/vestido3-2.jpeg","imagenes/vestidos/vestido3-3.jpeg", "iimagenes/vestidos/vestido3-1.jpeg"], [], []], 
-    4: ["Vestido raso negro cruzado", 45000, "Bordado con frutillas", ["imagenes/vestidos/vestido4-1.jpeg","imagenes/vestidos/vestido4-2.jpeg","imagenes/vestidos/vestido4-3.jpeg", "iimagenes/vestidos/vestido4-1.jpeg"], [], []], 
-    5: ["Vestido sin mangas lengua STONE", 35000, "", ["imagenes/vestidos/vestido5-1.jpeg","imagenes/vestidos/vestido5-2.jpeg","imagenes/vestidos/vestido5-3.jpeg", "iimagenes/vestidos/vestido5-1.jpeg"], ["Blanco", "Negro", "Gris"], []], 
-    6: ["Vestido lentejuelas espalda cavada", 45000, "", ["imagenes/vestidos/vestido6-1.jpeg","imagenes/vestidos/vestido6-2.jpeg","imagenes/vestidos/vestido6-3.jpeg", "iimagenes/vestidos/vestido6-4.jpeg"], ["Plata", "Negro"], [1, 2, 3]], 
+    0: 9,
+    1: ["Vestido bandana", 65000, "Pañuelos bandana multicolor", ["imagenes/vestidos/vestido1-1.jpeg","imagenes/vestidos/vestido1-2.jpeg","imagenes/vestidos/vestido1-3.jpeg", "imagenes/vestidos/vestido1-1.jpeg"], [], []],
+    2: ["Vestido bandana color", 65000, "", ["imagenes/vestidos/vestido2-1.jpeg","imagenes/vestidos/vestido2-2.jpeg","imagenes/vestidos/vestido2-3.jpeg", "imagenes/vestidos/vestido2-1.jpeg"], [], []],
+    3: ["Vestido bandana rosa", 65000, "", ["imagenes/vestidos/vestido3-1.jpeg","imagenes/vestidos/vestido3-2.jpeg","imagenes/vestidos/vestido3-3.jpeg", "imagenes/vestidos/vestido3-1.jpeg"], [], []], 
+    4: ["Vestido raso negro cruzado", 45000, "Bordado con frutillas", ["imagenes/vestidos/vestido4-1.jpeg","imagenes/vestidos/vestido4-2.jpeg","imagenes/vestidos/vestido4-3.jpeg", "imagenes/vestidos/vestido4-1.jpeg"], [], []], 
+    5: ["Vestido sin mangas lengua STONE", 35000, "", ["imagenes/vestidos/vestido5-1.jpeg","imagenes/vestidos/vestido5-2.jpeg","imagenes/vestidos/vestido5-3.jpeg", "imagenes/vestidos/vestido5-1.jpeg"], ["Blanco", "Negro", "Gris"], []], 
+    6: ["Vestido lentejuelas espalda cavada", 45000, "", ["imagenes/vestidos/vestido6-1.jpeg","imagenes/vestidos/vestido6-2.jpeg","imagenes/vestidos/vestido6-3.jpeg", "imagenes/vestidos/vestido6-4.jpeg"], ["Plata", "Negro"], [1, 2, 3]], 
+    7: ["Vestido Pin Up rayado con frutillas bordadas", 45000, "Tela bengalína", ["imagenes/vestidos/vestido7-1.jpeg","imagenes/vestidos/vestido7-2.jpeg","imagenes/vestidos/vestido7-1.jpeg", "imagenes/vestidos/vestido7-2.jpeg"], [], [1, 2, 3]], 
+    8: ["Vestido largo Smiles bordadas", 55000, "Tela algodón policotom", ["imagenes/vestidos/vestido8-1.jpeg","imagenes/vestidos/vestido8-2.jpeg","imagenes/vestidos/vestido8-3.jpeg", "imagenes/vestidos/vestido8-2.jpeg"], [], [1, 2]], 
+    9: ["Vestido largo rayado con estampa frutilla Olenka", 45000, "Tela morley", ["imagenes/vestidos/vestido9-1.jpeg","imagenes/vestidos/vestido9-2.jpeg","imagenes/vestidos/vestido9-3.jpeg", "imagenes/vestidos/vestido9-2.jpeg"], [], [1, 2, 3]], 
 }
 
 const camperas = {

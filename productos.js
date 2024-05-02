@@ -41,16 +41,16 @@ const overols = {
 }
 
 const accesorios = {
-    0: 31,
+    0: 29,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
     4: ["Aros honguitos", 6000, "", ["imagenes/accesorios/accesorio3-1.jpeg", "imagenes/accesorios/accesorio3-2.jpeg", "imagenes/accesorios/accesorio3-1.jpeg", "imagenes/accesorios/accesorio3-2.jpeg"], ["Rojo", "Amarillo", "Naranja", "Lila", "Celeste"], []],
     5: ["Cartera crochet", 19000, "", ["imagenes/accesorios/accesorio4-1.jpeg","imagenes/accesorios/accesorio4-1.jpeg","imagenes/accesorios/accesorio4-1.jpeg", "imagenes/accesorios/accesorio4-1.jpeg"], [], []],
-    6: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
+    6: ["Collar mosquetón Fluo", 15000, "", ["imagenes/accesorios/accesorio24-1.jpeg","imagenes/accesorios/accesorio24-1.jpeg","imagenes/accesorios/accesorio24-1.jpeg", "imagenes/accesorios/accesorio24-1jpeg"], [], []],
     7: ["Collar moño", 15000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
     8: ["Collar perlas y gafas", 15000, "", ["imagenes/accesorios/accesorio6-1.jpeg","imagenes/accesorios/accesorio6-1.jpeg","imagenes/accesorios/accesorio6-1.jpeg", "imagenes/accesorios/accesorio6-1.jpeg"], [], []],
-    9: ["Cartera mini bag crochet con lentejuelones verdes", 25000, "", ["imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg", "imagenes/accesorios/accesorio25-1jpeg"], [], []],
+    9: ["Cartera Crochet manija plástica ", 25000, "", ["imagenes/accesorios/accesorio23-1.jpeg","imagenes/accesorios/accesorio23-2.jpeg","imagenes/accesorios/accesorio23-3.jpeg", "imagenes/accesorios/accesorio23-1jpeg"], [], []],
    10: ["Collar perlas y osito", 15000, "", ["imagenes/accesorios/accesorio8-1.jpeg","imagenes/accesorios/accesorio8-1.jpeg","imagenes/accesorios/accesorio8-1.jpeg", "imagenes/accesorios/accesorio8-1.jpeg"], ["Rosa", "Blanco", "Transparente", "Celeste"], []],
    11: ["Collar zipper", 25000, "", ["imagenes/accesorios/accesorio9-1.jpeg","imagenes/accesorios/accesorio9-2.jpeg","imagenes/accesorios/accesorio9-1.jpeg", "imagenes/accesorios/accesorio9-2jpeg"], [], []],
    12: ["Cartera crochet", 15000, "", ["imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg", "imagenes/accesorios/accesorio10-1jpeg"], [], []],
@@ -71,9 +71,9 @@ const accesorios = {
    27: ["Cartera mini bag crochet con lentejuelas", 25000, "", ["imagenes/accesorios/accesorio21-1.jpeg","imagenes/accesorios/accesorio21-2.jpeg","imagenes/accesorios/accesorio21-1.jpeg", "imagenes/accesorios/accesorio21-2jpeg"], [], []],
    28: ["Aros frutillas verdes ", 5000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
    29: ["Pañuelo bandana azul ", 6000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
-   30: ["Cartera Crochet manija plástica ", 25000, "", ["imagenes/accesorios/accesorio23-1.jpeg","imagenes/accesorios/accesorio23-2.jpeg","imagenes/accesorios/accesorio23-3.jpeg", "imagenes/accesorios/accesorio23-1jpeg"], [], []],
-   31: ["Collar mosquetón Fluo", 15000, "", ["imagenes/accesorios/accesorio24-1.jpeg","imagenes/accesorios/accesorio24-1.jpeg","imagenes/accesorios/accesorio24-1.jpeg", "imagenes/accesorios/accesorio24-1jpeg"], [], []],
    32: ["Collar perlas y cadena", 25000, "", ["imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg", "imagenes/accesorios/accesorio7-1.jpeg"], [], []],
+   32: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
+   32: ["Cartera mini bag crochet con lentejuelones verdes", 25000, "", ["imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg", "imagenes/accesorios/accesorio25-1jpeg"], [], []],
 }
 
 const vestidos = {

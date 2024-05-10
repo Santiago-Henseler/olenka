@@ -365,6 +365,12 @@ function tipo_producto(type){
     if(type == "blazer"){
         return blazer;
     }
+    if(type == "polleras"){
+        return polleras;
+    }
+    if(type == "pantalones"){
+        return pantalones;
+    }
 }
 
 function crear_producto(type, id){

@@ -52,7 +52,7 @@ app.get("/success", (req, res)=>{
 
     for(let i in CARRITO){
         texto += ` ${CARRITO[i]["nombre"]} - ${CARRITO[i]["talle"]} - ${CARRITO[i]["color"]} - ${CARRITO[i]["cantidad"]} - ${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}`;
-        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span><span>${CARRITO[i]["color"]}</span><span>$${CARRITO[i]["cantidad"]}</span> </li> `
+        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["color"]}</span> <span>${CARRITO[i]["cantidad"]}</span> </li> `
         total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
 

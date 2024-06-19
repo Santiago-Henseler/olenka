@@ -371,6 +371,12 @@ function tipo_producto(type){
     if(type == "pantalones"){
         return pantalones;
     }
+    if(type == "tapado"){
+        return tapado;
+    }
+    if(type == "camisa"){
+        return camisa;
+    }
 }
 
 function crear_producto(type, id){

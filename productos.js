@@ -1,5 +1,5 @@
 const remeras = {
-    0: 25,
+    0: 30,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -34,7 +34,7 @@ const remeras = {
 }
 
 const buzos = {
-    0: 15,
+    0: 23,
     1: ["MAXI buzo bordado", 65000, "buzo tela rústica", ["imagenes/buzos/buzo1-1.jpeg", "imagenes/buzos/buzo1-4.jpeg", "imagenes/buzos/buzo1-3.jpeg", "imagenes/buzos/buzo1-2.jpeg"], ["Blanco", "Negro", "Gris melange"], []],
     2: ["MAXI buzo moño", 65000, "buzo tela rústica", ["imagenes/buzos/buzo2-1.jpeg", "imagenes/buzos/buzo2-3.jpeg", "imagenes/buzos/buzo2-2.jpeg", "imagenes/buzos/buzo2-1.jpeg"], ["Blanco", "Negro", "Gris"], []],
     3: ["Buzo básico oversize Honguitos", 65000, "buzo tela rústica", ["imagenes/buzos/buzo3-1.jpeg", "imagenes/buzos/buzo3-3.jpeg", "imagenes/buzos/buzo3-2.jpeg", "imagenes/buzos/buzo3-1.jpeg"], ["Blanco", "Negro", "Gris"], [1,2,3]],
@@ -79,7 +79,7 @@ const pantalones = {
 }
 
 const accesorios = {
-    0: 29,
+    0: 33,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -147,7 +147,7 @@ const camperas = {
 }
 
 const polleras = {
-    0: 9,
+    0: 12,
     1: ["Falda tul", 65000, "Tela tul elastizado", ["imagenes/polleras/pollera1-1.jpeg","imagenes/polleras/pollera1-2.jpeg","imagenes/polleras/pollera1-3.jpeg", "iimagenes/polleras/pollera1-1.jpeg"], [], []], 
     2: ["Falda mini eco cuero pintada con cierre", 45000, "", ["imagenes/polleras/pollera2-1.jpeg","imagenes/polleras/pollera2-2.jpeg","imagenes/polleras/pollera2-1.jpeg", "iimagenes/polleras/pollera2-2.jpeg"], [], [1, 2]], 
     3: ["Falda plisada metal", 35000, "", ["imagenes/remeras/remeron10-1.jpeg", "imagenes/remeras/remeron10-3.jpeg", "imagenes/remeras/remeron10-2.jpeg", "imagenes/remeras/remeron10-1.jpeg"], [], [1, 2]], 
@@ -177,14 +177,14 @@ const blazer = {
 }
 
 const camisa = {
-    0:1,
+    0:2,
     1:  ["MAXI camisa carita kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg", "imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg"], ["Negra", "Blanca"], []],
     2:  ["MAXI camisa bebé Kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa2-1.jpeg", "imagenes/camisa/camisa2-2.jpeg", "imagenes/camisa/camisa2-3.jpeg", "imagenes/camisa/camisa2-1.jpeg"], ["Negra", "Blanca"], []],
 
 }
 
 const tapado = {
-    0:1,
+    0:2,
     1:  ["Tapado BBB Camel", 65000, "Tela poplin elastizado", ["imagenes/tapado/tapado1-1.jpeg", "imagenes/tapado/tapado1-2.jpeg", "imagenes/tapado/tapado1-1.jpeg", "imagenes/tapado/tapado1-2.jpeg"], [], [1, 2]],
     2:  ["Tapado Bbb negro", 65000, "Tela poplin elastizado", ["imagenes/tapado/tapado2-1.jpeg", "imagenes/tapado/tapado2-2.jpeg", "imagenes/tapado/tapado2-1.jpeg", "imagenes/tapado/tapado2-2.jpeg"], [], [1, 2]],
 

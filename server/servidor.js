@@ -90,7 +90,7 @@ app.post("/a", async (req, res)=>{
 
     let CARRITO = global.pedido.carrito;
 
-    item = []
+    let item = []
 
     for(i in CARRITO){
         item.push({

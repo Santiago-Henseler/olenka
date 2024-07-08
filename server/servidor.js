@@ -45,14 +45,14 @@ app.get("/success", (req, res)=>{
                 <p>Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
                 Domicilio en ${datos.domicilio}, codigo postal ${datos.cp} a entregar en ${datos.envio}</p>
                 <br>
-                <p><span>Producto</span> <span>Talle</span> <span>Cantidad</span><span>Color</span> <span>Total</span></p>
+                <p><span>Producto</span>  <span>Talle</span>  <span>Cantidad</span>  <span>Color</span>  <span>Total</span></p>
                 <br>
                 <ul>
                     `
 
     for(let i in CARRITO){
         texto += ` ${CARRITO[i]["nombre"]} - ${CARRITO[i]["talle"]} - ${CARRITO[i]["color"]} - ${CARRITO[i]["cantidad"]} - ${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}`;
-        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["color"]}</span> <span>${CARRITO[i]["cantidad"]}</span> </li> `
+        html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["color"]}</span> <span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span> </li> `
         total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
 
@@ -92,6 +92,11 @@ app.post("/a", async (req, res)=>{
 
         const body = {
             items:[{
+                title: req.body.title,
+                quantity: Number(req.body.quantity),
+                unit_price: Number(req.body.price),
+                currency_id: "ARS",
+            },{
                 title: req.body.title,
                 quantity: Number(req.body.quantity),
                 unit_price: Number(req.body.price),

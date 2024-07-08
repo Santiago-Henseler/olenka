@@ -92,7 +92,7 @@ app.post("/a", async (req, res)=>{
 
     let item = []
 
-    for(i in CARRITO){
+    for(let i in CARRITO){
         item.push({
             title: CARRITO[i]["nombre"],
             quantity: Number(CARRITO[i]["cantidad"]),

@@ -88,20 +88,23 @@ app.post("/a", async (req, res)=>{
 
     global.pedido = req.body;
 
+    let CARRITO = global.pedido.carrito;
+
+    item = []
+
+    for(i in CARRITO){
+        item.push({
+            title: CARRITO[i]["nombre"],
+            quantity: Number(CARRITO[i]["cantidad"]),
+            unit_price: Number(CARRITO[i]["precio"]),
+            currency_id: "ARS",
+        })
+    }
+
     try{
 
         const body = {
-            items:[{
-                title: req.body.title,
-                quantity: Number(req.body.quantity),
-                unit_price: Number(req.body.price),
-                currency_id: "ARS",
-            },{
-                title: req.body.title,
-                quantity: Number(req.body.quantity),
-                unit_price: Number(req.body.price),
-                currency_id: "ARS",
-            }],
+            items:item,
             back_urls:{
                 success:`https://olenka-fa9w.onrender.com/success`,
                 failure:"https://santiago-henseler.github.io/olenka/error.html",

@@ -157,9 +157,9 @@ const polleras = {
     7: ["Falda eco cuero pintada silver", 45000, "", ["imagenes/polleras/pollera6-1.jpeg", "imagenes/polleras/pollera6-2.jpeg", "imagenes/polleras/pollera6-1.jpeg", "imagenes/polleras/pollera6-2.jpeg"], [], [1, 2]], 
     8: ["Falda plisada dorada", 25000, "", ["imagenes/buzos/buzo11-1.jpeg", "imagenes/buzos/buzo11-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/buzos/buzo11-3.jpeg"], [], [1, 2]], 
     9: ["Falda tul con brillos", 65000, "", ["imagenes/buzos/buzo14-1.jpeg", "imagenes/buzos/buzo14-2.jpeg", "imagenes/buzos/buzo14-1.jpeg", "imagenes/buzos/buzo14-3.jpeg"], [], []], 
-   10: ["Falda Tubo lentejuelas negras", 65000, "", ["imagenes/polleras/pollera8-1.jpeg", "imagenes/polleras/pollera8-2.jpeg", "imagenes/polleras/pollera8-3.jpeg", "imagenes/polleras/pollera8-2.jpeg"], ["Negro"], []], 
-   11: ["Falda tubo violeta", 65000, "", ["imagenes/polleras/pollera9-1.jpeg", "imagenes/polleras/pollera9-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera9-2.jpeg"], [], [1, 2]], 
-   12: ["Falda tubo lentejuelas plata", 65000, "", ["imagenes/polleras/pollera10-1.jpeg", "imagenes/polleras/pollera10-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera10-3.jpeg"], [], [1, 2]], 
+   10: ["Falda Tubo lentejuelas negras", 95000, "", ["imagenes/polleras/pollera8-1.jpeg", "imagenes/polleras/pollera8-2.jpeg", "imagenes/polleras/pollera8-3.jpeg", "imagenes/polleras/pollera8-2.jpeg"], ["Negro"], []], 
+   11: ["Falda tubo violeta", 95000, "", ["imagenes/polleras/pollera9-1.jpeg", "imagenes/polleras/pollera9-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera9-2.jpeg"], [], [1, 2]], 
+   12: ["Falda tubo lentejuelas plata", 95000, "", ["imagenes/polleras/pollera10-1.jpeg", "imagenes/polleras/pollera10-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera10-3.jpeg"], [], [1, 2]], 
 
 }
 

@@ -94,7 +94,7 @@ app.post("/a", async (req, res)=>{
 
     for(let i in CARRITO){
         item.push({
-            title: CARRITO[i]["nombre"],
+            title: CARRITO[i]["nombre"] + " color: " + CARRITO[i]["color"] + " talle: " + CARRITO[i]["talle"],
             quantity: Number(CARRITO[i]["cantidad"]),
             unit_price: Number(CARRITO[i]["precio"]),
             currency_id: "ARS",

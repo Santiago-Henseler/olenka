@@ -1,5 +1,5 @@
 const remeras = {
-    0: 30,
+    0: 31,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -30,11 +30,13 @@ const remeras = {
    28: ["Remera cerezas unisex bordada", 65000, "", ["imagenes/remeras/remeron28-1.jpeg", "imagenes/remeras/remeron28-2.jpeg", "imagenes/remeras/remeron25-4.jpeg", "imagenes/remeras/remeron28-3.jpeg"], ["Blanco","Negro","Bordo"], ["XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"]],
    29: ["Mega remeron con guarda", 45000, "", ["imagenes/remeras/remeron29-1.jpeg", "imagenes/remeras/remeron29-2.jpeg", "imagenes/remeras/remeron25-4.jpeg", "imagenes/remeras/remeron29-3.jpeg"], ["Blanco","Negro","Verde", "Fuxia"], ["S", "M", "L"]],
    30: ["Remeron unisex flores", 55000, "", ["imagenes/remeras/remeron30-1.jpeg", "imagenes/remeras/remeron30-2.jpeg", "imagenes/remeras/remeron25-4.jpeg", "imagenes/remeras/remeron30-2.jpeg"], ["Blanco","Negro","Rojo","Gris","Beige","Amarillo"], ["XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"]],
+   31: ["Remera cerezas con manga paillete", 45000, "", ["imagenes/remeras/remeron31-1.jpeg", "imagenes/remeras/remeron31-2.jpeg", "imagenes/remeras/remeron31-1.jpeg", "imagenes/remeras/remeron31-2.jpeg"], [], []],
+   32: ["Remera boca y fresa", 65000, "", ["imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg"], ["Blanco", "Negro", "Gris","Bordo"], [ "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"]],
 
 }
 
 const buzos = {
-    0: 23,
+    0: 25,
     1: ["MAXI buzo bordado", 65000, "buzo tela rústica", ["imagenes/buzos/buzo1-1.jpeg", "imagenes/buzos/buzo1-4.jpeg", "imagenes/buzos/buzo1-3.jpeg", "imagenes/buzos/buzo1-2.jpeg"], ["Blanco", "Negro", "Gris melange"], []],
     2: ["MAXI buzo moño", 65000, "buzo tela rústica", ["imagenes/buzos/buzo2-1.jpeg", "imagenes/buzos/buzo2-3.jpeg", "imagenes/buzos/buzo2-2.jpeg", "imagenes/buzos/buzo2-1.jpeg"], ["Blanco", "Negro", "Gris"], []],
     3: ["Buzo básico oversize Honguitos", 65000, "buzo tela rústica", ["imagenes/buzos/buzo3-1.jpeg", "imagenes/buzos/buzo3-3.jpeg", "imagenes/buzos/buzo3-2.jpeg", "imagenes/buzos/buzo3-1.jpeg"], ["Blanco", "Negro", "Gris"], [1,2,3]],
@@ -58,6 +60,8 @@ const buzos = {
    21: ["MAXI buzo Sara Kay",45000, "", ["imagenes/buzos/buzo21-1.jpeg", "imagenes/buzos/buzo21-2.jpeg", "imagenes/buzos/buzo21-1.jpeg", "imagenes/buzos/buzo21-2.jpeg"], ["Blanco","Negro", "Gris"], [1,2,3]],
    22: ["MAXI buzo osito azul",45000, "", ["imagenes/buzos/buzo22-1.jpeg", "imagenes/buzos/buzo22-2.jpeg", "imagenes/buzos/buzo22-3.jpeg", "imagenes/buzos/buzo22-2.jpeg"], ["Blanco","Negro", "Gris"], [1,2,3]],
    23: ["Polera gris con aplique",35000, "", ["imagenes/buzos/buzo23-1.jpeg", "imagenes/buzos/buzo23-2.jpeg", "imagenes/buzos/buzo23-1.jpeg", "imagenes/buzos/buzo23-2.jpeg"], [], []],
+   24: ["Poleron lanilla gris bordada",35000, "Tela lanilla", ["imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg"], ["Gris"], []],
+   25: ["Buzo Garfield bordado",75000, "Tela frizza", ["imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg"], ["Gris", "Negro", "Blanco", "Verde militar"], [ "S", "M", "L", "XL", "XXL"]],
 
 }
 
@@ -113,6 +117,10 @@ const accesorios = {
    31: ["Gorrito de lana moño", 15000, "", ["imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg", "imagenes/accesorios/accesorio27-1jpeg"], [], []],
    32: ["Gorrito lana ying yang", 15000, "", ["imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg", "imagenes/accesorios/accesorio28-1jpeg"], [], []],
    33: ["Gorrito lana smile", 15000, "", ["imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg", "imagenes/accesorios/accesorio29-1jpeg"], [], []],
+   34: ["Aros bomba", 25000, "", ["imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg", "imagenes/accesorios/accesorio30-1jpeg"], [], []],
+   35: ["Aros flor", 25000, "", ["imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg", "imagenes/accesorios/accesorio31-1jpeg"], [], []],
+   36: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1jpeg"], [], []],
+   37: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1jpeg"], [], []],
    
    100: ["Collar perlas y cadena", 25000, "", ["imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg", "imagenes/accesorios/accesorio7-1.jpeg"], [], []],
    100: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
@@ -140,9 +148,10 @@ const vestidos = {
 }
 
 const camperas = {
-    0: 2,
+    0: 3,
     1: ["Campera pintada eco cuero", 65000, "Eco cuero elastizado", ["imagenes/camperas/campera1-1.jpeg","imagenes/camperas/campera1-2.jpeg","imagenes/camperas/campera1-4.jpeg", "imagenes/camperas/campera1-3.jpeg"], [], [1, 2, 3]], 
     2: ["Campera jean bordada lentejuelas", 85000, "", ["imagenes/camperas/campera2-1.jpeg","imagenes/camperas/campera2-2.jpeg","imagenes/camperas/campera1-4.jpeg", "imagenes/camperas/campera2-3.jpeg"], [], [1, 3]], 
+    3: ["Campera Jean smile", 120000, "", ["imagenes/camperas/campera3-1.jpeg","imagenes/camperas/campera3-2.jpeg","imagenes/camperas/campera3-2.jpeg", "imagenes/camperas/campera3-1.jpeg"], [], []], 
 
 }
 
@@ -177,9 +186,10 @@ const blazer = {
 }
 
 const camisa = {
-    0:2,
+    0:3,
     1:  ["MAXI camisa carita kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg", "imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg"], ["Negra", "Blanca"], []],
     2:  ["MAXI camisa bebé Kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa2-1.jpeg", "imagenes/camisa/camisa2-2.jpeg", "imagenes/camisa/camisa2-3.jpeg", "imagenes/camisa/camisa2-1.jpeg"], ["Negra", "Blanca"], []],
+    3:  ["MAXI camisa estampada STONE", 55000, "Tela poplin elastizado", ["imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg", "imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg"], ["Negra", "Blanca"], []],    
 
 }
 

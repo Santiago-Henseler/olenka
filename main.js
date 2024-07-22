@@ -226,6 +226,7 @@ function checkout(){
                         <div class="cart-page-heading">
                             <h5>Tu compra</h5>
                             <p style="color:red">Todos los productos se entregan de 7 a 10 dias</p>
+                            <p style="color:red">Contactate y coordina el envío a través de whatsapp</p>
                         </div>
 
                         <ul id="list_prod" class="order-details-form mb-4">

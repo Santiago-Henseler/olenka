@@ -81,7 +81,7 @@ app.get("/success", (req, res)=>{
     });
 
 
-    res.redirect(url);
+    res.redirect(`https://santiago-henseler.github.io/olenka/success.html`);
 })
 
 app.post("/a", async (req, res)=>{

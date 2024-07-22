@@ -1,5 +1,5 @@
 const remeras = {
-    0: 31,
+    0: 32,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -83,7 +83,7 @@ const pantalones = {
 }
 
 const accesorios = {
-    0: 33,
+    0: 37,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -118,13 +118,13 @@ const accesorios = {
    32: ["Gorrito lana ying yang", 15000, "", ["imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg", "imagenes/accesorios/accesorio28-1jpeg"], [], []],
    33: ["Gorrito lana smile", 15000, "", ["imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg", "imagenes/accesorios/accesorio29-1jpeg"], [], []],
    34: ["Aros bomba", 25000, "", ["imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg", "imagenes/accesorios/accesorio30-1jpeg"], [], []],
-   35: ["Aros flor", 25000, "", ["imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg", "imagenes/accesorios/accesorio31-1jpeg"], [], []],
-   36: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1jpeg"], [], []],
-   37: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1jpeg"], [], []],
+   35: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1jpeg"], [], []],
+   36: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1jpeg"], [], []],
    
    100: ["Collar perlas y cadena", 25000, "", ["imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg", "imagenes/accesorios/accesorio7-1.jpeg"], [], []],
    100: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
    100: ["Cartera mini bag crochet con lentejuelones verdes", 25000, "", ["imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg", "imagenes/accesorios/accesorio25-1jpeg"], [], []],
+   100: ["Aros flor", 25000, "", ["imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg","imagenes/accesorios/accesorio31-1.jpeg", "imagenes/accesorios/accesorio31-1jpeg"], [], []],
 }
 
 const vestidos = {

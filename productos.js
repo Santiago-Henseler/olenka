@@ -1,5 +1,5 @@
 const remeras = {
-    0: 32,
+    0: 33,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -32,11 +32,12 @@ const remeras = {
    30: ["Remeron unisex flores", 55000, "", ["imagenes/remeras/remeron30-1.jpeg", "imagenes/remeras/remeron30-2.jpeg", "imagenes/remeras/remeron25-4.jpeg", "imagenes/remeras/remeron30-2.jpeg"], ["Blanco","Negro","Rojo","Gris","Beige","Amarillo"], ["XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"]],
    31: ["Remera cerezas con manga paillete", 45000, "", ["imagenes/remeras/remeron31-1.jpeg", "imagenes/remeras/remeron31-2.jpeg", "imagenes/remeras/remeron31-1.jpeg", "imagenes/remeras/remeron31-2.jpeg"], [], []],
    32: ["Remera boca y fresa", 65000, "", ["imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg", "imagenes/remeras/remeron32-1.jpeg"], ["Blanco", "Negro", "Gris","Bordo"], [ "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"]],
+   33: ["Remera playboy con mangas lentejuelas", 45000, "", ["imagenes/remeras/remeron33-1.jpeg", "imagenes/remeras/remeron33-2.jpeg", "imagenes/remeras/remeron33-1.jpeg", "imagenes/remeras/remeron33-2.jpeg"], [], []],
 
 }
 
 const buzos = {
-    0: 25,
+    0: 26,
     1: ["MAXI buzo bordado", 65000, "buzo tela rústica", ["imagenes/buzos/buzo1-1.jpeg", "imagenes/buzos/buzo1-4.jpeg", "imagenes/buzos/buzo1-3.jpeg", "imagenes/buzos/buzo1-2.jpeg"], ["Blanco", "Negro", "Gris melange"], []],
     2: ["MAXI buzo moño", 65000, "buzo tela rústica", ["imagenes/buzos/buzo2-1.jpeg", "imagenes/buzos/buzo2-3.jpeg", "imagenes/buzos/buzo2-2.jpeg", "imagenes/buzos/buzo2-1.jpeg"], ["Blanco", "Negro", "Gris"], []],
     3: ["Buzo básico oversize Honguitos", 65000, "buzo tela rústica", ["imagenes/buzos/buzo3-1.jpeg", "imagenes/buzos/buzo3-3.jpeg", "imagenes/buzos/buzo3-2.jpeg", "imagenes/buzos/buzo3-1.jpeg"], ["Blanco", "Negro", "Gris"], [1,2,3]],
@@ -62,6 +63,7 @@ const buzos = {
    23: ["Polera gris con aplique",35000, "", ["imagenes/buzos/buzo23-1.jpeg", "imagenes/buzos/buzo23-2.jpeg", "imagenes/buzos/buzo23-1.jpeg", "imagenes/buzos/buzo23-2.jpeg"], [], []],
    24: ["Poleron lanilla gris bordada",35000, "Tela lanilla", ["imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg"], ["Gris"], []],
    25: ["Buzo Garfield bordado",75000, "Tela frizza", ["imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg"], ["Gris", "Negro", "Blanco", "Verde militar"], [ "S", "M", "L", "XL", "XXL"]],
+   26: ["MAXI buzo Love bordado",65000, "Tela rústico", ["imagenes/buzos/buzo26-1.jpeg", "imagenes/buzos/buzo26-2.jpeg", "imagenes/buzos/buzo26-1.jpeg", "imagenes/buzos/buzo26-2.jpeg"], ["Gris", "Negro", "Blanco"], ["1", "2", "3"]],
 
 }
 
@@ -83,7 +85,7 @@ const pantalones = {
 }
 
 const accesorios = {
-    0: 37,
+    0: 38,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -94,33 +96,40 @@ const accesorios = {
     8: ["Collar perlas y gafas", 15000, "", ["imagenes/accesorios/accesorio6-1.jpeg","imagenes/accesorios/accesorio6-1.jpeg","imagenes/accesorios/accesorio6-1.jpeg", "imagenes/accesorios/accesorio6-1.jpeg"], [], []],
     9: ["Cartera Crochet manija plástica ", 25000, "", ["imagenes/accesorios/accesorio23-1.jpeg","imagenes/accesorios/accesorio23-2.jpeg","imagenes/accesorios/accesorio23-3.jpeg", "imagenes/accesorios/accesorio23-1jpeg"], [], []],
    10: ["Collar perlas y osito", 15000, "", ["imagenes/accesorios/accesorio8-1.jpeg","imagenes/accesorios/accesorio8-1.jpeg","imagenes/accesorios/accesorio8-1.jpeg", "imagenes/accesorios/accesorio8-1.jpeg"], ["Rosa", "Blanco", "Transparente", "Celeste"], []],
-   11: ["Collar zipper", 25000, "", ["imagenes/accesorios/accesorio9-1.jpeg","imagenes/accesorios/accesorio9-2.jpeg","imagenes/accesorios/accesorio9-1.jpeg", "imagenes/accesorios/accesorio9-2jpeg"], [], []],
-   12: ["Cartera crochet", 15000, "", ["imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg", "imagenes/accesorios/accesorio10-1jpeg"], [], []],
-   13: ["Collar lolipop", 19000, "Color perlas blancas", ["imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg", "imagenes/accesorios/accesorio11-1jpeg"], [], []],
-   14: ["Collar multi dijes con perlas amarillas", 35000, "", ["imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg", "imagenes/accesorios/accesorio11-1jpeg"], [], []],
-   15: ["Aros snake STRASS", 12000, "", ["imagenes/accesorios/accesorio12-1.jpeg","imagenes/accesorios/accesorio12-1.jpeg","imagenes/accesorios/accesorio12-1.jpeg", "imagenes/accesorios/accesorio12-1jpeg"], [], []],
-   16: ["Aros cruz STRASS", 12000, "", ["imagenes/accesorios/accesorio13-1.jpeg","imagenes/accesorios/accesorio13-1.jpeg","imagenes/accesorios/accesorio13-1.jpeg", "imagenes/accesorios/accesorio13-1jpeg"], [], []],
-   17: ["Aros frutilla", 6000, "Plástico reciclado", ["imagenes/accesorios/accesorio14-1.jpeg","imagenes/accesorios/accesorio14-2.jpeg","imagenes/accesorios/accesorio14-1.jpeg", "imagenes/accesorios/accesorio14-2jpeg"], [], []],
-   18: ["Collar perlas naranjas", 15000, "", ["imagenes/accesorios/accesorio15-1.jpeg","imagenes/accesorios/accesorio15-2.jpeg","imagenes/accesorios/accesorio15-1.jpeg", "imagenes/accesorios/accesorio15-2jpeg"], [], []],
-   19: ["Collar multidijes perla turquesa", 35000, "", ["imagenes/accesorios/accesorio15-1.jpeg","imagenes/accesorios/accesorio15-2.jpeg","imagenes/accesorios/accesorio15-1.jpeg", "imagenes/accesorios/accesorio15-2jpeg"], [], []],
-   20: ["Collar Choker osito transparente", 15000, "", ["imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg", "imagenes/accesorios/accesorio16-1jpeg"], [], []],
-   21: ["Collar ositos de colores", 25000, "", ["imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg", "imagenes/accesorios/accesorio16-1jpeg"], [], []],
-   22: ["Collar frutillas", 25000, "", ["imagenes/accesorios/accesorio17-1.jpeg","imagenes/accesorios/accesorio17-1.jpeg","imagenes/accesorios/accesorio17-1.jpeg", "imagenes/accesorios/accesorio17-1jpeg"], [], []],
-   23: ["Aros frutillas", 5000, "", ["imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg", "imagenes/accesorios/accesorio18-1jpeg"], [], []],
-   24: ["Collar perlas y alfileres", 15000, "", ["imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg", "imagenes/accesorios/accesorio18-1jpeg"], [], []],
-   25: ["Collar perlas doble", 35000, "", ["imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg", "imagenes/accesorios/accesorio19-1jpeg"], [], []],
-   26: ["Tote crochet", 25000, "", ["imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg", "imagenes/accesorios/accesorio20-1jpeg"], ["Verde", "Naranja"], []],
-   27: ["Cartera mini bag crochet con lentejuelas", 25000, "", ["imagenes/accesorios/accesorio21-1.jpeg","imagenes/accesorios/accesorio21-2.jpeg","imagenes/accesorios/accesorio21-1.jpeg", "imagenes/accesorios/accesorio21-2jpeg"], [], []],
-   28: ["Aros frutillas verdes", 5000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
-   29: ["Pañuelo bandana azul", 6000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1jpeg"], [], []],
-   30: ["Collar Perlita", 25000, "", ["imagenes/accesorios/accesorio26-1.jpeg","imagenes/accesorios/accesorio26-1.jpeg","imagenes/accesorios/accesorio26-1.jpeg", "imagenes/accesorios/accesorio26-1jpeg"], [], []],
-   31: ["Gorrito de lana moño", 15000, "", ["imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg", "imagenes/accesorios/accesorio27-1jpeg"], [], []],
-   32: ["Gorrito lana ying yang", 15000, "", ["imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg", "imagenes/accesorios/accesorio28-1jpeg"], [], []],
-   33: ["Gorrito lana smile", 15000, "", ["imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg", "imagenes/accesorios/accesorio29-1jpeg"], [], []],
-   34: ["Aros bomba", 25000, "", ["imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg", "imagenes/accesorios/accesorio30-1jpeg"], [], []],
-   35: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1jpeg"], [], []],
-   36: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1jpeg"], [], []],
-   
+   11: ["Collar zipper", 25000, "", ["imagenes/accesorios/accesorio9-1.jpeg","imagenes/accesorios/accesorio9-2.jpeg","imagenes/accesorios/accesorio9-1.jpeg", "imagenes/accesorios/accesorio9-2.jpeg"], [], []],
+   12: ["Cartera crochet", 15000, "", ["imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg","imagenes/accesorios/accesorio10-1.jpeg", "imagenes/accesorios/accesorio10-1.jpeg"], [], []],
+   13: ["Collar lolipop", 19000, "Color perlas blancas", ["imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg", "imagenes/accesorios/accesorio11-1j.peg"], [], []],
+   14: ["Collar multi dijes con perlas amarillas", 35000, "", ["imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg","imagenes/accesorios/accesorio11-1.jpeg", "imagenes/accesorios/accesorio11-1.jpeg"], [], []],
+   15: ["Aros snake STRASS", 12000, "", ["imagenes/accesorios/accesorio12-1.jpeg","imagenes/accesorios/accesorio12-1.jpeg","imagenes/accesorios/accesorio12-1.jpeg", "imagenes/accesorios/accesorio12-1.jpeg"], [], []],
+   16: ["Aros cruz STRASS", 12000, "", ["imagenes/accesorios/accesorio13-1.jpeg","imagenes/accesorios/accesorio13-1.jpeg","imagenes/accesorios/accesorio13-1.jpeg", "imagenes/accesorios/accesorio13-1.jpeg"], [], []],
+   17: ["Aros frutilla", 6000, "Plástico reciclado", ["imagenes/accesorios/accesorio14-1.jpeg","imagenes/accesorios/accesorio14-2.jpeg","imagenes/accesorios/accesorio14-1.jpeg", "imagenes/accesorios/accesorio14-2.jpeg"], [], []],
+   18: ["Collar perlas naranjas", 15000, "", ["imagenes/accesorios/accesorio15-1.jpeg","imagenes/accesorios/accesorio15-2.jpeg","imagenes/accesorios/accesorio15-1.jpeg", "imagenes/accesorios/accesorio15-2.jpeg"], [], []],
+   19: ["Collar multidijes perla turquesa", 35000, "", ["imagenes/accesorios/accesorio15-1.jpeg","imagenes/accesorios/accesorio15-2.jpeg","imagenes/accesorios/accesorio15-1.jpeg", "imagenes/accesorios/accesorio15-2.jpeg"], [], []],
+   20: ["Collar Choker osito transparente", 15000, "", ["imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg", "imagenes/accesorios/accesorio16-1.jpeg"], [], []],
+   21: ["Collar ositos de colores", 25000, "", ["imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg","imagenes/accesorios/accesorio16-1.jpeg", "imagenes/accesorios/accesorio16-1.jpeg"], [], []],
+   22: ["Collar frutillas", 25000, "", ["imagenes/accesorios/accesorio17-1.jpeg","imagenes/accesorios/accesorio17-1.jpeg","imagenes/accesorios/accesorio17-1.jpeg", "imagenes/accesorios/accesorio17-1.jpeg"], [], []],
+   23: ["Aros frutillas", 5000, "", ["imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg", "imagenes/accesorios/accesorio18-1.jpeg"], [], []],
+   24: ["Collar perlas y alfileres", 15000, "", ["imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg","imagenes/accesorios/accesorio18-1.jpeg", "imagenes/accesorios/accesorio18-1.jpeg"], [], []],
+   25: ["Collar perlas doble", 35000, "", ["imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg","imagenes/accesorios/accesorio19-1.jpeg", "imagenes/accesorios/accesorio19-1.jpeg"], [], []],
+   26: ["Tote crochet", 25000, "", ["imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg","imagenes/accesorios/accesorio20-1.jpeg", "imagenes/accesorios/accesorio20-1.jpeg"], ["Verde", "Naranja"], []],
+   27: ["Cartera mini bag crochet con lentejuelas", 25000, "", ["imagenes/accesorios/accesorio21-1.jpeg","imagenes/accesorios/accesorio21-2.jpeg","imagenes/accesorios/accesorio21-1.jpeg", "imagenes/accesorios/accesorio21-2.jpeg"], [], []],
+   28: ["Aros frutillas verdes", 5000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1.jpeg"], [], []],
+   29: ["Pañuelo bandana azul", 6000, "", ["imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg","imagenes/accesorios/accesorio22-1.jpeg", "imagenes/accesorios/accesorio22-1.jpeg"], [], []],
+   30: ["Collar Perlita", 25000, "", ["imagenes/accesorios/accesorio26-1.jpeg","imagenes/accesorios/accesorio26-1.jpeg","imagenes/accesorios/accesorio26-1.jpeg", "imagenes/accesorios/accesorio26-1.jpeg"], [], []],
+   31: ["Gorrito de lana moño", 15000, "", ["imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg","imagenes/accesorios/accesorio27-1.jpeg", "imagenes/accesorios/accesorio27-1.jpeg"], [], []],
+   32: ["Gorrito lana ying yang", 15000, "", ["imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg", "imagenes/accesorios/accesorio28-1.jpeg"], [], []],
+   33: ["Gorrito lana smile", 15000, "", ["imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg", "imagenes/accesorios/accesorio29-1.jpeg"], [], []],
+   34: ["Aros bomba", 25000, "", ["imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg", "imagenes/accesorios/accesorio30-1.jpeg"], [], []],
+   35: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1.jpeg"], [], []],
+   36: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1.jpeg"], [], []],
+   37: ["Collar perlas ", 25000, "", ["imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg"], [], []],
+   38: ["Collar kitty", 25000, "", ["imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg"], [], []],
+   39: ["Corbatas looney tunes", 25000, "", ["imagenes/accesorios/accesorio35-1.jpeg","imagenes/accesorios/accesorio35-2.jpeg","imagenes/accesorios/accesorio35-3.jpeg", "imagenes/accesorios/accesorio35-1.jpeg"], ["Pato Donal", "Demonio de Tasmania", "Piolin"], []],
+   40: ["Aros vintage gotas", 25000, "", ["imagenes/accesorios/accesorio36-1.jpeg","imagenes/accesorios/accesorio36-1.jpeg","imagenes/accesorios/accesorio36-1.jpeg", "imagenes/accesorios/accesorio36-1.jpeg"], [], []],
+   41: ["Aros vintage camafeo", 25000, "", ["imagenes/accesorios/accesorio37-1.jpeg","imagenes/accesorios/accesorio37-2.jpeg","imagenes/accesorios/accesorio37-3.jpeg", "imagenes/accesorios/accesorio37-1.jpeg"], [], []],
+
+
+
    100: ["Collar perlas y cadena", 25000, "", ["imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg", "imagenes/accesorios/accesorio7-1.jpeg"], [], []],
    100: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
    100: ["Cartera mini bag crochet con lentejuelones verdes", 25000, "", ["imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg", "imagenes/accesorios/accesorio25-1jpeg"], [], []],
@@ -128,7 +137,7 @@ const accesorios = {
 }
 
 const vestidos = {
-    0: 15,
+    0: 16,
     1: ["Vestido bandana", 65000, "Pañuelos bandana multicolor", ["imagenes/vestidos/vestido1-1.jpeg","imagenes/vestidos/vestido1-2.jpeg","imagenes/vestidos/vestido1-3.jpeg", "imagenes/vestidos/vestido1-1.jpeg"], [], []],
     2: ["Vestido bandana color", 65000, "", ["imagenes/vestidos/vestido2-1.jpeg","imagenes/vestidos/vestido2-2.jpeg","imagenes/vestidos/vestido2-3.jpeg", "imagenes/vestidos/vestido2-1.jpeg"], [], []],
     3: ["Vestido bandana rosa", 65000, "", ["imagenes/vestidos/vestido3-1.jpeg","imagenes/vestidos/vestido3-2.jpeg","imagenes/vestidos/vestido3-3.jpeg", "imagenes/vestidos/vestido3-1.jpeg"], [], []], 
@@ -144,6 +153,7 @@ const vestidos = {
    13: ["Vestido tul crudo flores", 85000, "", ["imagenes/vestidos/vestido13-1.jpeg","imagenes/vestidos/vestido13-2.jpeg","imagenes/vestidos/vestido13-4.jpeg", "imagenes/vestidos/vestido13-3.jpeg"], [], []], 
    14: ["Vestido gasa fuxia frutillas", 85000, "", ["imagenes/vestidos/vestido14-1.jpeg","imagenes/vestidos/vestido14-2.jpeg","imagenes/vestidos/vestido14-4.jpeg", "imagenes/vestidos/vestido14-3.jpeg"], [], []], 
    15: ["Vestido bandana verde", 65000, "", ["imagenes/vestidos/vestido15-1.jpeg","imagenes/vestidos/vestido15-2.jpeg","imagenes/vestidos/vestido15-4.jpeg", "imagenes/vestidos/vestido15-3.jpeg"], [], []], 
+   16: ["Vestido gasa frutillas", 85000, "Tela doble gasa y modal", ["imagenes/vestidos/vestido16-1.jpeg","imagenes/vestidos/vestido16-2.jpeg","imagenes/vestidos/vestido16-1.jpeg", "imagenes/vestidos/vestido16-2.jpeg"], [], []], 
 
 }
 
@@ -186,10 +196,11 @@ const blazer = {
 }
 
 const camisa = {
-    0:3,
+    0:4,
     1:  ["MAXI camisa carita kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg", "imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg"], ["Negra", "Blanca"], []],
     2:  ["MAXI camisa bebé Kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa2-1.jpeg", "imagenes/camisa/camisa2-2.jpeg", "imagenes/camisa/camisa2-3.jpeg", "imagenes/camisa/camisa2-1.jpeg"], ["Negra", "Blanca"], []],
     3:  ["MAXI camisa estampada STONE", 55000, "Tela poplin elastizado", ["imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg", "imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg"], ["Negra", "Blanca"], []],    
+    4:  ["MAXI camisa poplin negra elastizada", 45000, "", ["imagenes/camisa/camisa4-1.jpeg", "imagenes/camisa/camisa4-2.jpeg", "imagenes/camisa/camisa4-1.jpeg", "imagenes/camisa/camisa4-2.jpeg"], [], []],    
 
 }
 

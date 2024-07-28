@@ -32,13 +32,9 @@ app.get("/success", (req, res)=>{
     let CARRITO = global.pedido.carrito;
     let datos = global.pedido.datos;
 
-    var texto = `Pedido realizado por ${datos.nombre} ${datos.apellido}, Tel: ${datos.telefono}, Mail: ${datos.mail}.
-    Domicilio en ${datos.domicilio}, codigo postal ${datos.cp} a entregar en ${datos.envio}.`;
-
     let total = 0;
 
     let html = '';
-
 
     html += `<html>
             <body>
@@ -51,16 +47,9 @@ app.get("/success", (req, res)=>{
                     `
 
     for(let i in CARRITO){
-        texto += ` ${CARRITO[i]["nombre"]} - ${CARRITO[i]["talle"]} - ${CARRITO[i]["color"]} - ${CARRITO[i]["cantidad"]} - ${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}`;
         html += ` <li><span>${CARRITO[i]["nombre"]}</span>  <span>${CARRITO[i]["talle"]}</span> <span>${CARRITO[i]["color"]}</span> <span>${CARRITO[i]["precio"] * CARRITO[i]["cantidad"]}</span> </li> `
         total += CARRITO[i]["precio"] * CARRITO[i]["cantidad"];
     }
-
-    texto += "total $${total}"
-
-    var tel = +5491161625030;
-
-    var url = `https://api.whatsapp.com/send?phone=${tel}&text=${texto}`;
 
     html += `</ul><p>Total: <span>${total}</span></p></body></html>`
 

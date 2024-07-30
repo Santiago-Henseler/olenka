@@ -37,7 +37,7 @@ const remeras = {
 }
 
 const buzos = {
-    0: 26,
+    0: 28,
     1: ["MAXI buzo bordado", 65000, "buzo tela rústica", ["imagenes/buzos/buzo1-1.jpeg", "imagenes/buzos/buzo1-4.jpeg", "imagenes/buzos/buzo1-3.jpeg", "imagenes/buzos/buzo1-2.jpeg"], ["Blanco", "Negro", "Gris melange"], []],
     2: ["MAXI buzo moño", 65000, "buzo tela rústica", ["imagenes/buzos/buzo2-1.jpeg", "imagenes/buzos/buzo2-3.jpeg", "imagenes/buzos/buzo2-2.jpeg", "imagenes/buzos/buzo2-1.jpeg"], ["Blanco", "Negro", "Gris"], []],
     3: ["Buzo básico oversize Honguitos", 65000, "buzo tela rústica", ["imagenes/buzos/buzo3-1.jpeg", "imagenes/buzos/buzo3-3.jpeg", "imagenes/buzos/buzo3-2.jpeg", "imagenes/buzos/buzo3-1.jpeg"], ["Blanco", "Negro", "Gris"], [1,2,3]],
@@ -64,6 +64,8 @@ const buzos = {
    24: ["Poleron lanilla gris bordada",35000, "Tela lanilla", ["imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg", "imagenes/buzos/buzo24-1.jpeg"], ["Gris"], []],
    25: ["Buzo Garfield bordado",75000, "Tela frizza", ["imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg", "imagenes/buzos/buzo25-1.jpeg"], ["Gris", "Negro", "Blanco", "Verde militar"], [ "S", "M", "L", "XL", "XXL"]],
    26: ["MAXI buzo Love bordado",65000, "Tela rústico", ["imagenes/buzos/buzo26-1.jpeg", "imagenes/buzos/buzo26-2.jpeg", "imagenes/buzos/buzo26-1.jpeg", "imagenes/buzos/buzo26-2.jpeg"], ["Gris", "Negro", "Blanco"], ["1", "2", "3"]],
+   27: ["Canguro leopardo",75000, "Tela polar", ["imagenes/buzos/buzo27-1.jpeg", "imagenes/buzos/buzo27-2.jpeg", "imagenes/buzos/buzo27-3.jpeg", "imagenes/buzos/buzo27-2.jpeg"], [], []],
+   28: ["Canguro smile",75000, "Tela polar", ["imagenes/buzos/buzo28-1.jpeg", "imagenes/buzos/buzo28-2.jpeg", "imagenes/buzos/buzo28-3.jpeg", "imagenes/buzos/buzo28-2.jpeg"], [], []],
 
 }
 
@@ -85,7 +87,7 @@ const pantalones = {
 }
 
 const accesorios = {
-    0: 38,
+    0: 40,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -120,16 +122,14 @@ const accesorios = {
    32: ["Gorrito lana ying yang", 15000, "", ["imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg","imagenes/accesorios/accesorio28-1.jpeg", "imagenes/accesorios/accesorio28-1.jpeg"], [], []],
    33: ["Gorrito lana smile", 15000, "", ["imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg","imagenes/accesorios/accesorio29-1.jpeg", "imagenes/accesorios/accesorio29-1.jpeg"], [], []],
    34: ["Aros bomba", 25000, "", ["imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg","imagenes/accesorios/accesorio30-1.jpeg", "imagenes/accesorios/accesorio30-1.jpeg"], [], []],
-   35: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1.jpeg"], [], []],
+   35: ["Aros vintage camafeo", 25000, "", ["imagenes/accesorios/accesorio37-1.jpeg","imagenes/accesorios/accesorio37-2.jpeg","imagenes/accesorios/accesorio37-3.jpeg", "imagenes/accesorios/accesorio37-1.jpeg"], [], []],
    36: ["Aros vintage perla blanca ", 25000, "", ["imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg","imagenes/accesorios/accesorio33-1.jpeg", "imagenes/accesorios/accesorio33-1.jpeg"], [], []],
    37: ["Collar perlas ", 25000, "", ["imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg"], [], []],
    38: ["Collar kitty", 25000, "", ["imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg","imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg"], [], []],
    39: ["Corbatas looney tunes", 25000, "", ["imagenes/accesorios/accesorio35-1.jpeg","imagenes/accesorios/accesorio35-2.jpeg","imagenes/accesorios/accesorio35-3.jpeg", "imagenes/accesorios/accesorio35-1.jpeg"], ["Pato Donal", "Demonio de Tasmania", "Piolin"], []],
    40: ["Aros vintage gotas", 25000, "", ["imagenes/accesorios/accesorio36-1.jpeg","imagenes/accesorios/accesorio36-1.jpeg","imagenes/accesorios/accesorio36-1.jpeg", "imagenes/accesorios/accesorio36-1.jpeg"], [], []],
-   41: ["Aros vintage camafeo", 25000, "", ["imagenes/accesorios/accesorio37-1.jpeg","imagenes/accesorios/accesorio37-2.jpeg","imagenes/accesorios/accesorio37-3.jpeg", "imagenes/accesorios/accesorio37-1.jpeg"], [], []],
 
-
-
+   100: ["Aros vintage perla peltrer", 25000, "", ["imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg","imagenes/accesorios/accesorio32-1.jpeg", "imagenes/accesorios/accesorio32-1.jpeg"], [], []],
    100: ["Collar perlas y cadena", 25000, "", ["imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg","imagenes/accesorios/accesorio7-1.jpeg", "imagenes/accesorios/accesorio7-1.jpeg"], [], []],
    100: ["Collar Choker flor", 12000, "", ["imagenes/accesorios/accesorio5-1.jpeg","imagenes/accesorios/accesorio5-2.jpeg","imagenes/accesorios/accesorio5-3.jpeg", "imagenes/accesorios/accesorio5-1.jpeg"], [], []],
    100: ["Cartera mini bag crochet con lentejuelones verdes", 25000, "", ["imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg","imagenes/accesorios/accesorio25-1.jpeg", "imagenes/accesorios/accesorio25-1jpeg"], [], []],

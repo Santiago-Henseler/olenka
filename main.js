@@ -555,8 +555,6 @@ function crear_seccion(type){
         hay_producto = false;
     }
 
-
-
     if(!seccion && hay_seccion){
         let elemento = document.getElementById("seccion_prod");
         main.removeChild(elemento);
@@ -616,10 +614,8 @@ function crear_seccion(type){
         <div class="col-12 col-sm-6 col-lg-4" onclick="crear_producto('${type}', ${i+1})">
             
             <div class="single-product-wrapper">
-                <!-- Product Image -->
                 <div class="product-img">
                     <img src="${productos[i+1][3][0]}" alt="">
-                    <!-- Hover Thumb -->
                     <img class="hover-img" src="${productos[i+1][3][1]}" alt="">
 
                     

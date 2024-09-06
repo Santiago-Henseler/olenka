@@ -1,5 +1,5 @@
 const remeras = {
-    0: 33,
+    0: 0,
     1: ["Mega remeron Barbie con gafas", 25000, "remera de polycoton", ["imagenes/remeras/remeron1-1.jpeg", "imagenes/remeras/remeron1-4.jpeg", "imagenes/remeras/remeron1-3.jpeg", "imagenes/remeras/remeron1-2.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
     2: ["Remera básica Olenka bordada Chanel dorado", 35000, "remera de polycoton", ["imagenes/remeras/remeron2-1.jpeg", "imagenes/remeras/remeron2-4.jpeg", "imagenes/remeras/remeron2-3.jpeg", "imagenes/remeras/remeron2-2.jpeg"], ["Blanco", "Negro"], [1, 2, 3]],
     3: ["Mega remeron con Frutillitas", 25000, "remera de polycoton", ["imagenes/remeras/remeron3-1.jpeg", "imagenes/remeras/remeron3-3.jpeg", "imagenes/remeras/remeron3-2.jpeg", "imagenes/remeras/remeron3-1.jpeg"], ["Blanco", "Negro", "Verde", "Fuxia"], ["S", "M", "L"]],
@@ -37,7 +37,7 @@ const remeras = {
 }
 
 const buzos = {
-    0: 28,
+    0: 0,
     1: ["MAXI buzo bordado", 65000, "buzo tela rústica", ["imagenes/buzos/buzo1-1.jpeg", "imagenes/buzos/buzo1-4.jpeg", "imagenes/buzos/buzo1-3.jpeg", "imagenes/buzos/buzo1-2.jpeg"], ["Blanco", "Negro", "Gris melange"], []],
     2: ["MAXI buzo moño", 65000, "buzo tela rústica", ["imagenes/buzos/buzo2-1.jpeg", "imagenes/buzos/buzo2-3.jpeg", "imagenes/buzos/buzo2-2.jpeg", "imagenes/buzos/buzo2-1.jpeg"], ["Blanco", "Negro", "Gris"], []],
     3: ["Buzo básico oversize Honguitos", 65000, "buzo tela rústica", ["imagenes/buzos/buzo3-1.jpeg", "imagenes/buzos/buzo3-3.jpeg", "imagenes/buzos/buzo3-2.jpeg", "imagenes/buzos/buzo3-1.jpeg"], ["Blanco", "Negro", "Gris"], [1,2,3]],
@@ -82,12 +82,12 @@ const overols = {
 }
 
 const pantalones = {
-    0:1,
+    0:0,
     1:  ["Calza Oxford lurex", 25000, "", ["imagenes/remeras/remeron23-1.jpeg", "imagenes/remeras/remeron23-2.jpeg", "imagenes/remeras/remeron23-3.jpeg", "imagenes/remeras/remeron23-4.jpeg"], [], []],
 }
 
 const accesorios = {
-    0: 40,
+    0: 0,
     1: ["Collar MAXI mosquetón y perlas", 15000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     2: ["Aros STRASS", 8000, "", ["imagenes/accesorios/accesorio1-1.jpeg", "imagenes/accesorios/accesorio1-2.jpeg", "imagenes/accesorios/accesorio1-3.jpeg", "imagenes/accesorios/accesorio1-1.jpeg"], [], []],
     3: ["Aros alien", 6000, "Aros de plástico reciclado", ["imagenes/accesorios/accesorio2-1.jpeg", "imagenes/accesorios/accesorio2-2.jpeg", "imagenes/accesorios/accesorio2-3.jpeg", "imagenes/accesorios/accesorio2-1.jpeg"], ["Amarillo", "Violeta", "Verde agua"], []],
@@ -137,7 +137,7 @@ const accesorios = {
 }
 
 const vestidos = {
-    0: 16,
+    0: 0,
     1: ["Vestido bandana", 65000, "Pañuelos bandana multicolor", ["imagenes/vestidos/vestido1-1.jpeg","imagenes/vestidos/vestido1-2.jpeg","imagenes/vestidos/vestido1-3.jpeg", "imagenes/vestidos/vestido1-1.jpeg"], [], []],
     2: ["Vestido bandana color", 65000, "", ["imagenes/vestidos/vestido2-1.jpeg","imagenes/vestidos/vestido2-2.jpeg","imagenes/vestidos/vestido2-3.jpeg", "imagenes/vestidos/vestido2-1.jpeg"], [], []],
     3: ["Vestido bandana rosa", 65000, "", ["imagenes/vestidos/vestido3-1.jpeg","imagenes/vestidos/vestido3-2.jpeg","imagenes/vestidos/vestido3-3.jpeg", "imagenes/vestidos/vestido3-1.jpeg"], [], []], 
@@ -158,7 +158,7 @@ const vestidos = {
 }
 
 const camperas = {
-    0: 3,
+    0: 0,
     1: ["Campera pintada eco cuero", 65000, "Eco cuero elastizado", ["imagenes/camperas/campera1-1.jpeg","imagenes/camperas/campera1-2.jpeg","imagenes/camperas/campera1-4.jpeg", "imagenes/camperas/campera1-3.jpeg"], [], [1, 2, 3]], 
     2: ["Campera jean bordada lentejuelas", 85000, "", ["imagenes/camperas/campera2-1.jpeg","imagenes/camperas/campera2-2.jpeg","imagenes/camperas/campera1-4.jpeg", "imagenes/camperas/campera2-3.jpeg"], [], [1, 3]], 
     3: ["Campera Jean smile", 120000, "", ["imagenes/camperas/campera3-1.jpeg","imagenes/camperas/campera3-2.jpeg","imagenes/camperas/campera3-2.jpeg", "imagenes/camperas/campera3-1.jpeg"], [], []], 
@@ -166,7 +166,7 @@ const camperas = {
 }
 
 const polleras = {
-    0: 12,
+    0: 0,
     1: ["Falda tul", 65000, "Tela tul elastizado", ["imagenes/polleras/pollera1-1.jpeg","imagenes/polleras/pollera1-2.jpeg","imagenes/polleras/pollera1-3.jpeg", "iimagenes/polleras/pollera1-1.jpeg"], [], []], 
     2: ["Falda mini eco cuero pintada con cierre", 45000, "", ["imagenes/polleras/pollera2-1.jpeg","imagenes/polleras/pollera2-2.jpeg","imagenes/polleras/pollera2-1.jpeg", "iimagenes/polleras/pollera2-2.jpeg"], [], [1, 2]], 
     3: ["Falda plisada metal", 35000, "", ["imagenes/remeras/remeron10-1.jpeg", "imagenes/remeras/remeron10-3.jpeg", "imagenes/remeras/remeron10-2.jpeg", "imagenes/remeras/remeron10-1.jpeg"], [], [1, 2]], 
@@ -183,7 +183,7 @@ const polleras = {
 }
 
 const blazer = {
-    0: 9,
+    0: 0,
     1: ["Blazer crep elastizado", 85000, "", ["imagenes/blazer/blazer1-1.jpeg","imagenes/blazer/blazer1-4.jpeg","imagenes/blazer/blazer1-3.jpeg", "iimagenes/blazer/blazer1-2.jpeg"], [], [1,2,3,4,5]], 
     2: ["Blazer lentejuelas plata", 85000, "", ["imagenes/blazer/blazer2-1.jpeg","imagenes/blazer/blazer2-4.jpeg","imagenes/blazer/blazer2-3.jpeg", "iimagenes/blazer/blazer2-2.jpeg"], [], [1, 2]], 
     3: ["Blazer crep rojo liso", 45000, "", ["imagenes/blazer/blazer3-1.jpeg","imagenes/blazer/blazer3-2.jpeg","imagenes/blazer/blazer3-3.jpeg", "iimagenes/blazer/blazer3-2.jpeg"], [], [1,2,3,4,5]], 
@@ -196,7 +196,7 @@ const blazer = {
 }
 
 const camisa = {
-    0:4,
+    0:0,
     1:  ["MAXI camisa carita kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg", "imagenes/camisa/camisa1-1.jpeg", "imagenes/camisa/camisa1-2.jpeg"], ["Negra", "Blanca"], []],
     2:  ["MAXI camisa bebé Kewpie", 45000, "Tela poplin elastizado", ["imagenes/camisa/camisa2-1.jpeg", "imagenes/camisa/camisa2-2.jpeg", "imagenes/camisa/camisa2-3.jpeg", "imagenes/camisa/camisa2-1.jpeg"], ["Negra", "Blanca"], []],
     3:  ["MAXI camisa estampada STONE", 55000, "Tela poplin elastizado", ["imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg", "imagenes/camisa/camisa3-1.jpeg", "imagenes/camisa/camisa3-2.jpeg"], ["Negra", "Blanca"], []],    

@@ -86,8 +86,12 @@ const overols = {
 }
 
 const pantalones = {
-    0:1,
+    0:2,
     1: ["Pantalón foil multicolor", 95000, "", ["imagenes/pantalones/pantalones1-1.jpeg", "imagenes/pantalones/pantalones1-2.jpeg", "imagenes/pantalones/pantalones1-3.jpeg", "imagenes/pantalones/pantalones1-4.jpeg"], [], [36,38,40,42,44,46,48]],
+    2: ["Pantalón deportivo", 95000, "Tela ketten", ["imagenes/pantalones/pantalones2-1.jpeg", "imagenes/pantalones/pantalones2-2.jpeg", "imagenes/pantalones/pantalones2-3.jpeg", "imagenes/pantalones/pantalones2-2.jpeg"], ["Fuxia", "Verde","Rojo"], [1,2,3,4,5]],
+  
+  
+  
     99:  ["Calza Oxford lurex", 25000, "", ["imagenes/remeras/remeron23-1.jpeg", "imagenes/remeras/remeron23-2.jpeg", "imagenes/remeras/remeron23-3.jpeg", "imagenes/remeras/remeron23-4.jpeg"], [], []],
 }
 
@@ -225,8 +229,8 @@ const tapado = {
 }
 
 const carteras = {
-    0: 9,
-    1: ["Cartera Tote big pintada", 35000, "", ["imagenes/carteras/cartera1-1.jpeg", "imagenes/carteras/cartera1-2.jpeg", "imagenes/carteras/cartera1-3.jpeg", "imagenes/carteras/cartera1-2.jpeg"], ["Blanco"], []],
+    0: 8,
+    1: ["Cartera Tote big Silver", 35000, "", ["imagenes/carteras/cartera9-1.jpeg", "imagenes/carteras/cartera9-2.jpeg", "imagenes/carteras/cartera9-1.jpeg", "imagenes/carteras/cartera9-2.jpeg"], [""], []],
     2: ["Mini bag cubo", 25000, "", ["imagenes/carteras/cartera2-1.jpeg", "imagenes/carteras/cartera2-2.jpeg", "imagenes/carteras/cartera2-3.jpeg", "imagenes/carteras/cartera2-2.jpeg"], ["Verde", "Fuxia", "Amarillo", "Negro", "Plata"], []],
     3: ["Cartera baggette pins", 35000, "", ["imagenes/carteras/cartera3-1.jpeg", "imagenes/carteras/cartera3-2.jpeg", "imagenes/carteras/cartera3-3.jpeg", "imagenes/carteras/cartera3-2.jpeg"], ["Verde", "Fuxia", "Amarillo"], []],
     4: ["Cartera frutilla", 35000, "", ["imagenes/carteras/cartera4-1.jpeg", "imagenes/carteras/cartera4-2.jpeg", "imagenes/carteras/cartera4-1.jpeg", "imagenes/carteras/cartera4-2.jpeg"], [""], []],
@@ -234,5 +238,6 @@ const carteras = {
     6: ["Sobre kiss", 25000, "", ["imagenes/carteras/cartera6-1.jpeg", "imagenes/carteras/cartera6-2.jpeg", "imagenes/carteras/cartera6-1.jpeg", "imagenes/carteras/cartera6-2.jpeg"], ["Rojo", "Fuxia"], []],
     7: ["Carteras baggette con holder multicolor", 25000, "", ["imagenes/carteras/cartera7-1.jpeg", "imagenes/carteras/cartera7-2.jpeg", "imagenes/carteras/cartera7-3.jpeg", "imagenes/carteras/cartera7-4.jpeg"], ["Negro", "Cebra", "Leopardo", "Plata"], []],
     8: ["Carteras baggette con holder multicolor", 25000, "", ["imagenes/carteras/cartera8-1.jpeg", "imagenes/carteras/cartera8-2.jpeg", "imagenes/carteras/cartera8-3.jpeg", "imagenes/carteras/cartera8-4.jpeg"], ["Negro", "Cebra", "Leopardo", "Plata"], []],
-    9: ["Cartera Tote big Silver", 35000, "", ["imagenes/carteras/cartera9-1.jpeg", "imagenes/carteras/cartera9-2.jpeg", "imagenes/carteras/cartera9-1.jpeg", "imagenes/carteras/cartera9-2.jpeg"], [""], []],
+    99: ["Cartera Tote big pintada", 35000, "", ["imagenes/carteras/cartera1-1.jpeg", "imagenes/carteras/cartera1-2.jpeg", "imagenes/carteras/cartera1-3.jpeg", "imagenes/carteras/cartera1-2.jpeg"], ["Blanco"], []],
+
 }

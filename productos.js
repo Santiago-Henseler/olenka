@@ -1,7 +1,7 @@
 const remeras = {
     0: 3,
     1: ["Remerón Bart bordado", 45000, "", ["imagenes/remeras/remeron33-1.jpeg", "imagenes/remeras/remeron33-2.jpeg", "imagenes/remeras/remeron33-3.jpeg", "imagenes/remeras/remeron33-2.jpeg"], [], []],
-    2: ["Remerón frutilla", 45000, "", ["imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg"], [], []],
+    2: ["Remerón frutilla", 15000, "", ["imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg"], [], []],
     3: ["Remeras deportivas", 19000, "", ["imagenes/remeras/remeron35-1.jpeg", "imagenes/remeras/remeron35-2.jpeg", "imagenes/remeras/remeron35-3.jpeg", "imagenes/remeras/remeron35-4.jpeg"], ["Blanco", "Negro", "Fuxia"], [1,2]],
     4: ["Múscu cavada lentejuelon", 19000, "", ["imagenes/remeras/remeron36-1.jpeg", "imagenes/remeras/remeron36-2.jpeg", "imagenes/remeras/remeron36-3.jpeg", "imagenes/remeras/remeron36-1.jpeg"], [], [1,2]],
 
@@ -29,16 +29,14 @@ const overols = {
 
 const pantalones = {
     0:2,
-    1: ["Pantalón foil multicolor", 95000, "", ["imagenes/pantalones/pantalones1-1.jpeg", "imagenes/pantalones/pantalones1-2.jpeg", "imagenes/pantalones/pantalones1-3.jpeg", "imagenes/pantalones/pantalones1-4.jpeg"], [], [36,38,40,42,44,46,48]],
-    2: ["Pantalón deportivo", 95000, "Tela ketten", ["imagenes/pantalones/pantalones2-1.jpeg", "imagenes/pantalones/pantalones2-2.jpeg", "imagenes/pantalones/pantalones2-3.jpeg", "imagenes/pantalones/pantalones2-2.jpeg"], ["Fuxia", "Verde","Rojo"], [1,2,3,4,5]],
+    1: ["Pantalón foil multicolor", 25000, "", ["imagenes/pantalones/pantalones1-1.jpeg", "imagenes/pantalones/pantalones1-2.jpeg", "imagenes/pantalones/pantalones1-3.jpeg", "imagenes/pantalones/pantalones1-4.jpeg"], [], [36,38,40,42,44,46,48]],
+    2: ["Pantalón deportivo", 25000, "Tela ketten", ["imagenes/pantalones/pantalones2-1.jpeg", "imagenes/pantalones/pantalones2-2.jpeg", "imagenes/pantalones/pantalones2-3.jpeg", "imagenes/pantalones/pantalones2-2.jpeg"], ["Fuxia", "Verde","Rojo"], [1,2,3,4,5]],
   
 }
 
 const accesorios = {
     0: 1,
     1: ["Choker Nina", 15000, "", ["imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg", "imagenes/accesorios/accesorio34-1.jpeg"], [], []],
-
-    sdsadad
 }
 
 const vestidos = {
@@ -71,8 +69,8 @@ const camperas = {
 
 const polleras = {
     0: 2,
-    1: ["Falda plisada golden", 95000, "", ["imagenes/polleras/pollera11-1.jpeg", "imagenes/polleras/pollera11-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera11-3.jpeg"], [], [1, 2]], 
-    2: ["Falda tubo lentejuelas", 95000, "", ["imagenes/polleras/pollera10-1.jpeg", "imagenes/polleras/pollera10-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera10-3.jpeg"], ["Plata", "Negro", "Violeta"], [1, 2]], 
+    1: ["Falda plisada golden", 25000, "", ["imagenes/polleras/pollera11-1.jpeg", "imagenes/polleras/pollera11-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera11-3.jpeg"], [], [1, 2]], 
+    2: ["Falda tubo lentejuelas", 25000, "", ["imagenes/polleras/pollera10-1.jpeg", "imagenes/polleras/pollera10-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera10-3.jpeg"], ["Plata", "Negro", "Violeta"], [1, 2]], 
     3: ["Falda plisada golden", 35000, "", ["imagenes/polleras/pollera12-1.jpeg", "imagenes/polleras/pollera12-2.jpeg", "imagenes/polleras/pollera7-1.jpeg", "imagenes/polleras/pollera12-1   .jpeg"], [], [1, 2]], 
 
 

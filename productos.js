@@ -1,5 +1,5 @@
 const remeras = {
-    0: 3,
+    0: 4,
     1: ["Remerón Bart bordado", 45000, "", ["imagenes/remeras/remeron33-1.jpeg", "imagenes/remeras/remeron33-2.jpeg", "imagenes/remeras/remeron33-3.jpeg", "imagenes/remeras/remeron33-2.jpeg"], [], []],
     2: ["Remerón frutilla", 15000, "", ["imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg", "imagenes/remeras/remeron34-1.jpeg"], [], []],
     3: ["Remeras deportivas", 19000, "", ["imagenes/remeras/remeron35-1.jpeg", "imagenes/remeras/remeron35-2.jpeg", "imagenes/remeras/remeron35-3.jpeg", "imagenes/remeras/remeron35-4.jpeg"], ["Blanco", "Negro", "Fuxia"], [1,2]],

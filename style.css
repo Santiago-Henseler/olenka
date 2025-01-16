@@ -1,3 +1,27 @@
+.whatsapp {
+   position: fixed;
+   width: 50px;
+   height: 50px;
+   bottom: 30px;
+   right: 20px;
+   background-color: #25d366;
+   color: #FFF;
+   border-radius: 50px;
+   text-align: center;
+   font-size: 30px;
+   z-index: 100;
+ }
+ 
+ .whatsapp-icon {
+   margin-top: 10px;
+ }
+
+#scrollUp{
+   color: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+   z-index: -1 !important;
+}
 
 html{
    scroll-behavior: smooth;

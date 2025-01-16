@@ -472,10 +472,10 @@ function crear_producto(type, id){
 
         <!-- Single Product Thumb -->
             <div class="single_product_thumb clearfix" id="slider-container">
-                <img src="${producto[id][3][0]}" alt="">
-                <img src="${producto[id][3][1]}" alt="">
-                <img src="${producto[id][3][2]}" alt="">
-                <img src="${producto[id][3][3]}" alt="">
+                <img src="${producto[id][3][0]}" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="${producto[id][3][1]}" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="${producto[id][3][2]}" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="${producto[id][3][3]}" alt="" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
 
         <!-- Single Product Description -->
@@ -618,8 +618,8 @@ function crear_seccion(type){
             
             <div class="single-product-wrapper">
                 <div class="product-img">
-                    <img src="${productos[i+1][3][0]}" alt="">
-                    <img class="hover-img" src="${productos[i+1][3][1]}" alt="">
+                    <img src="${productos[i+1][3][0]}"  style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                    <img class="hover-img" src="${productos[i+1][3][1]}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
 
                     
                 </div>

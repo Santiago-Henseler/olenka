@@ -364,7 +364,7 @@ function tipo_producto(type){
         return camperas;
     }
     if(type == "blazer"){
-        return blazer;
+        return blazers;
     }
     if(type == "polleras"){
         return polleras;
@@ -376,7 +376,7 @@ function tipo_producto(type){
         return tapado;
     }
     if(type == "camisa"){
-        return camisa;
+        return camisas;
     }
     if(type == "carteras"){
         return carteras;
@@ -407,7 +407,7 @@ function crear_producto(type, id){
     
     <style>
 
-        #${type}}{
+        #${type}{
             background-color:#fff;
             position:relative;
             margin:0px;
@@ -424,13 +424,17 @@ function crear_producto(type, id){
         #slider-container {
             display: flex;
             width: 300%;
-            animation: carousel 30s linear infinite;
+            animation: carousel 25s linear infinite;
+            height: 80%;
         }
 
         #slider-container img {
             display: inline-block;
             width:100%;
             float: left;
+            height: 100%;
+            object-fit: cover;
+            flex: 1;
         }
 
         @keyframes carousel {
@@ -500,9 +504,6 @@ function crear_producto(type, id){
 
                         <select name="select" id="cantidad">
                             <option value="1">Cantidad: 1</option>
-                            <option value="2">Cantidad: 2</option>
-                            <option value="3">Cantidad: 3</option>
-                            <option value="4">Cantidad: 4</option>
                         </select>
                     </div>
                     <!-- Cart & Favourite Box -->

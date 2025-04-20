@@ -372,10 +372,10 @@ function tipo_producto(type){
     if(type == "pantalones"){
         return pantalones;
     }
-    if(type == "tapado"){
-        return tapado;
+    if(type == "tapados"){
+        return tapados;
     }
-    if(type == "camisa"){
+    if(type == "camisas"){
         return camisas;
     }
     if(type == "carteras"){
@@ -571,7 +571,11 @@ function crear_seccion(type){
     document.getElementById("uno").style.display = "none";
     document.getElementById("categoria").style.display = "none";
    
-    
+    if(type == "cueros"){
+        cueros_sec();
+        return;
+    }
+
     let productos = tipo_producto(type);
     let total = productos[0];
 
@@ -599,7 +603,6 @@ function crear_seccion(type){
     </section>`);
 
     let prod_site = document.getElementById(`row${type}`);  
-    
     prod_site.innerHTML += `
     <div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);margin-bottom: 10px;">
         <div class="container h-100">
@@ -612,6 +615,88 @@ function crear_seccion(type){
             </div>
         </div>
     </div>
+    ` 
+    for(let i = 0; i < total; i++){
+        prod_site.innerHTML += `
+        <div class="col-12 col-sm-6 col-lg-4" onclick="crear_producto('${type}', ${i+1})">
+            
+            <div class="single-product-wrapper">
+                <div class="product-img">
+                    <img src="${productos[i+1][3][0]}"  style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                    <img class="hover-img" src="${productos[i+1][3][1]}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+
+                    
+                </div>
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span></span>
+                    
+                        <h6>${productos[i+1][0]}</h6>
+                    
+                    <p class="product-price">$${productos[i+1][1]}</p>
+
+                   
+                </div>
+            </div>
+            
+        </div>`
+    };
+
+    hay_seccion = true;
+
+    return;
+}
+
+
+function cueros_sec(){
+
+    type = "cueros"
+
+    let productos = cueros;
+    let total = productos[0];
+
+    main.insertAdjacentHTML('afterbegin', `
+    
+    <style>
+        #${type}{
+            background-color:#fff;
+            position:relative;
+            margin:0px;
+            z-index: 10;
+            width:100%;
+            min-height: 100%;
+        }
+    </style>
+    
+    <section id="seccion_prod">
+        <div id="${type}" class="shop_grid_area section-padding-80">
+            <div id="cont${type}" class="container">
+                <div id="row${type}" class="row">
+                                        
+                </div>
+            </div>
+        </div> 
+    </section>`);
+
+    let prod_site = document.getElementById(`row${type}`);  
+    
+
+    prod_site.innerHTML += `
+
+        <style>
+            .banner {
+                background-image: url('imagenes/cueros/bg.jpeg');
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+                width: 100%;
+                margin-bottom: 80px;
+            }
+        </style>
+        <div class="banner"></div>
+
+        
     ` 
     for(let i = 0; i < total; i++){
         prod_site.innerHTML += `

@@ -1,4 +1,4 @@
-const tapado = {
+const tapados = {
     0:6,
     1:  ["Tapado cuadros", 65000, "Tela polar", ["imagenes/tapados/1-1.jpeg", "imagenes/tapados/1-2.jpeg", "imagenes/tapados/1-3.jpeg", "imagenes/tapados/1-4.jpeg"], [], [1, 2]],
     2:  ["Tapado metalizado Silver", 160000, "Tela corderito con foil", ["imagenes/tapados/2-1.jpeg", "imagenes/tapados/2-2.jpeg", "imagenes/tapados/2-3.jpeg", "imagenes/tapados/2-4.jpeg"], [], [1, 2,3]],
@@ -10,8 +10,8 @@ const tapado = {
 
 const camperas = {
     0:4,
-    1:  ["Campera polar leopardo", 120000, "Tela polar", ["imagenes/camperas/1-1.jpeg", "imagenes/camperas/1-2.jpeg", "imagenes/camperas/1-3.jpeg", "imagenes/camperas/1-1.jpeg"], [], [1]],
-    2:  ["Campera polar Smile", 120000, "Tela polar", ["imagenes/camperas/2-1.jpeg", "imagenes/camperas/2-2.jpeg", "imagenes/camperas/2-3.jpeg", "imagenes/camperas/2-4.jpeg"], [], [1, 2]],
+    1:  ["Campera polar leopardo", 45000, "Tela polar", ["imagenes/camperas/1-1.jpeg", "imagenes/camperas/1-2.jpeg", "imagenes/camperas/1-3.jpeg", "imagenes/camperas/1-1.jpeg"], [], [1]],
+    2:  ["Campera polar Smile", 45000, "Tela polar", ["imagenes/camperas/2-1.jpeg", "imagenes/camperas/2-2.jpeg", "imagenes/camperas/2-3.jpeg", "imagenes/camperas/2-4.jpeg"], [], [1, 2]],
     3:  ["Campera jean negra foil plata", 120000, "", ["imagenes/camperas/3-1.jpeg", "imagenes/camperas/3-2.jpeg", "imagenes/camperas/3-3.jpeg", "imagenes/camperas/3-4.jpeg"], [], [1, 2]],
     4:  ["Campera biker con foil", 65000, "", ["imagenes/camperas/4-1.jpeg", "imagenes/camperas/4-2.jpeg", "imagenes/camperas/4-3.jpeg", "imagenes/camperas/4-1.jpeg"], [], [1, 2,3]],
 
@@ -38,10 +38,11 @@ const buzos = {
 }
 
 const overols = {
-    0:3,
+    0:4,
     1:  ["Overol negro foil Silver", 125000, "Tela bengalína elastizada", ["imagenes/overols/1-1.jpeg", "imagenes/overols/1-2.jpeg", "imagenes/overols/1-3.jpeg", "imagenes/overols/1-1.jpeg"], [], [1,2,3]],
     2:  ["Overol celeste Foil Silver", 125000, "Tela bengalína elastizada", ["imagenes/overols/2-1.jpeg", "imagenes/overols/2-2.jpeg", "imagenes/overols/2-3.jpeg", "imagenes/overols/2-4.jpeg"], [], [1,2,3]],
     3:  ["Conjunto Lisboa honguitos", 65000, "Tela fibrana", ["imagenes/overols/3-1.jpeg", "imagenes/overols/3-2.jpeg", "imagenes/overols/3-3.jpeg", "imagenes/overols/3-4.jpeg"], [], [1,2,3,4,5]],
+    4:  ["Conjunto Lisboa New York", 65000, "Tela fibrana", ["imagenes/overols/4-1.jpeg", "imagenes/overols/4-2.jpeg", "imagenes/overols/4-3.jpeg", "imagenes/overols/4-4.jpeg"], [], [1,2,3,4,5]],
 
 }
 
@@ -99,4 +100,12 @@ const accesorios = {
     9:  ["Canastas", 15000, "", ["imagenes/accesorios/9-1.jpeg", "imagenes/accesorios/9-2.jpeg", "imagenes/accesorios/9-3.jpeg", "imagenes/accesorios/9-4.jpeg"], [], []],
    10:  ["MAXI cartera Pintada Love", 45000, "Tela eco cuero", ["imagenes/accesorios/10-1.jpeg", "imagenes/accesorios/10-2.jpeg", "imagenes/accesorios/10-3.jpeg", "imagenes/accesorios/10-1.jpeg"], [], []],
 
+}
+
+const cueros = {
+    0: 4,
+    1: ["Chaleco de pelo", 0, "", ["imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg", "imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg"], [], ["S", "M", "L"]],
+    2: ["Chaleco corderito", 0, "" ,["imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg" , "imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg"], [], ["S", "M", "L"]],
+    3: ["Campera rocker cuero ", 0, "" ,["imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg", "imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]],
+    4: ["Campera de flecos", 490000, "", ["imagenes/cueros/4-1.jpeg", "imagenes/cueros/4-2.jpeg", "imagenes/cueros/4-3.jpeg", "imagenes/cueros/4-4.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]]
 }

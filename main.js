@@ -661,7 +661,8 @@ function crear_seccion(type){
     return;
 }
 
-function talles(){
+function talles(){ 
+    
     window.scrollTo(0,0);
 
     let main = document.getElementById("main");

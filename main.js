@@ -2,6 +2,7 @@ var hay_seccion = false;
 var hay_producto = false;
 var hay_checkout = false;
 var hay_vintage = false;
+var hay_talles = false;
 
 const cpOrigen = 1878;
 
@@ -62,6 +63,12 @@ function inicio(){
     }
 
     let main = document.getElementById("main");
+
+    if(hay_talles){
+        let elemento = document.getElementById("talles");
+        main.removeChild(elemento);
+        hay_talles = false;
+    }
 
     if(hay_seccion){
         let elemento = document.getElementById("seccion_prod");
@@ -550,6 +557,12 @@ function crear_seccion(type){
 
     seccion = !!document.getElementById(`${type}`);
 
+    if(hay_talles){
+        let elemento = document.getElementById("talles");
+        main.removeChild(elemento);
+        hay_talles = false;
+    }
+
     if(hay_producto){
         let elemento = document.getElementById("product");
         main.removeChild(elemento);
@@ -648,6 +661,143 @@ function crear_seccion(type){
     return;
 }
 
+function talles(){
+    window.scrollTo(0,0);
+
+    let main = document.getElementById("main");
+
+    if(hay_producto){
+        let elemento = document.getElementById("product");
+        main.removeChild(elemento);
+        if(!hay_vintage){
+            document.getElementById("seccion_prod").style.display = "block";
+        }
+        hay_producto = false;
+    }
+
+    if(hay_seccion){
+        let elemento = document.getElementById("seccion_prod");
+        main.removeChild(elemento);
+    }
+
+
+    document.getElementById("uno").style.display = "none";
+    document.getElementById("categoria").style.display = "none";
+
+    main.insertAdjacentHTML('afterbegin', ` 
+    <section id="talles">
+
+        <div class="modal fade" id="modalImagen" tabindex="-1" aria-labelledby="modalImagenLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+              <div class="modal-body text-center p-0">
+                <img id="imagenAmpliada" src="" class="img-fluid rounded shadow" alt="Imagen ampliada">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+        <section class="container py-5">
+          <h2 class="text-center mb-4">Guía de Talles</h2>
+          <div class="row justify-content-center">
+        
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+              <img src="imagenes/talles/1.jpeg" alt="Campera de cuero"
+                   class="img-fluid rounded shadow w-100"
+                   style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                   data-bs-toggle="modal" data-bs-target="#modalImagen"
+                   onclick="ampliarImagen(this)">
+              <p class="mt-2">Campera de cuero</p>
+            </div>
+        
+            <!-- Talle M -->
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+              <img src="imagenes/talles/2.jpeg" alt="Overol"
+                   class="img-fluid rounded shadow w-100"
+                   style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                   data-bs-toggle="modal" data-bs-target="#modalImagen"
+                   onclick="ampliarImagen(this)">
+              <p class="mt-2">Overol</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+            <img src="imagenes/talles/3.jpeg" alt="Maxi camisa"
+                 class="img-fluid rounded shadow w-100"
+                 style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                 data-bs-toggle="modal" data-bs-target="#modalImagen"
+                 onclick="ampliarImagen(this)">
+            <p class="mt-2">Maxi camisa</p>
+          </div>
+
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+                <img src="imagenes/talles/4.jpeg" alt="Musculosa lentejuelas"
+                    class="img-fluid rounded shadow w-100"
+                    style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                    data-bs-toggle="modal" data-bs-target="#modalImagen"
+                    onclick="ampliarImagen(this)">
+                <p class="mt-2">Musculosa lentejuelas</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+                <img src="imagenes/talles/5.jpeg" alt="Pollera plisada"
+                    class="img-fluid rounded shadow w-100"
+                    style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                    data-bs-toggle="modal" data-bs-target="#modalImagen"
+                    onclick="ampliarImagen(this)">
+                <p class="mt-2">Pollera plisada</p>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+            <img src="imagenes/talles/6.jpeg" alt="Remera basica"
+                 class="img-fluid rounded shadow w-100"
+                 style="max-height: 300px; object-fit: contain; cursor: pointer;"
+                 data-bs-toggle="modal" data-bs-target="#modalImagen"
+                 onclick="ampliarImagen(this)">
+            <p class="mt-2">Remera basica</p>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+          <img src="imagenes/talles/7.jpeg" alt="Buzo basico"
+               class="img-fluid rounded shadow w-100"
+               style="max-height: 300px; object-fit: contain; cursor: pointer;"
+               data-bs-toggle="modal" data-bs-target="#modalImagen"
+               onclick="ampliarImagen(this)">
+          <p class="mt-2">Buzo basico</p>
+        </div>
+        
+        <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+        <img src="imagenes/talles/8.jpeg" alt="Pantalon deportivo"
+             class="img-fluid rounded shadow w-100"
+             style="max-height: 300px; object-fit: contain; cursor: pointer;"
+             data-bs-toggle="modal" data-bs-target="#modalImagen"
+             onclick="ampliarImagen(this)">
+        <p class="mt-2">Pantalon deportivo</p>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 text-center mb-4">
+      <img src="imagenes/talles/9.jpeg" alt="Pallazo"
+           class="img-fluid rounded shadow w-100"
+           style="max-height: 300px; object-fit: contain; cursor: pointer;"
+           data-bs-toggle="modal" data-bs-target="#modalImagen"
+           onclick="ampliarImagen(this)">
+      <p class="mt-2">Pallazo</p>
+    </div>
+        
+          </div>
+        </section>
+  
+    </section>`);
+
+    hay_talles = true;
+}
+
+function ampliarImagen(imagen) {
+    const modalImg = document.getElementById('imagenAmpliada');
+    modalImg.src = imagen.src;
+    console.log(imagen.src)
+    modalImg.alt = imagen.alt;
+  }
 
 function cueros_sec(){
 

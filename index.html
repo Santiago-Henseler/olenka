@@ -67,6 +67,7 @@
                                 
                                 </div>
                             </li>
+                            <li><a onclick="talles()"> Talles</a></li>
                             <li><a href="#contact">Contacto</a></li>
                         </ul>
                     </div>
@@ -122,11 +123,39 @@
 <main id="main">
 
 
-
+    <style>
+        .custom-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            font-size: 3rem;
+            color: white;
+            opacity: 0.6;
+            z-index: 10;
+            padding: 0 15px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+    
+        .custom-control:hover {
+            opacity: 1;
+        }
+    
+        .custom-control.prev {
+            left: 10px;
+        }
+    
+        .custom-control.next {
+            right: 10px;
+        }
+    </style>
+    
     <!-- ##### Welcome Area Start ##### -->
     <section id="uno" class="welcome_area bg-img background-overlay">
         <div class="hero" id="inicio">
-            <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel" >
+            <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="imagenes/inicio.jpeg" alt="Imagen 1" class="d-block w-100 img-fluid">
@@ -141,9 +170,21 @@
                         <img src="imagenes/inicio4.jpeg" alt="Imagen 4" class="d-block w-100 img-fluid">
                     </div>
                 </div>
+    
+                <!-- Botón Anterior -->
+                <button class="carousel-control custom-control prev" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="prev">
+                    ‹
+                </button>
+    
+                <!-- Botón Siguiente -->
+                <button class="carousel-control custom-control next" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="next">
+                    ›
+                </button>
             </div>
         </div>
     </section>
+    
+
   
 
     <section id="categoria" class="ftco-section ftco-choose ftco-no-pb ftco-no-pt">

@@ -103,9 +103,10 @@ const accesorios = {
 }
 
 const cueros = {
-    0: 4,
-    1: ["Chaleco de pelo", 0, "", ["imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg", "imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg"], [], ["S", "M", "L"]],
-    2: ["Chaleco corderito", 0, "" ,["imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg" , "imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg"], [], ["S", "M", "L"]],
-    3: ["Campera rocker cuero ", 0, "" ,["imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg", "imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]],
-    4: ["Campera de flecos", 490000, "", ["imagenes/cueros/4-1.jpeg", "imagenes/cueros/4-2.jpeg", "imagenes/cueros/4-3.jpeg", "imagenes/cueros/4-4.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]]
+    0: 5,
+    1: ["Chaleco de pelo", 450000, "", ["imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg", "imagenes/cueros/1-1.jpeg", "imagenes/cueros/1-2.jpeg"], [], ["S", "M", "L"]],
+    2: ["Chaleco corderito", 420000, "" ,["imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg" , "imagenes/cueros/2-1.jpeg", "imagenes/cueros/2-2.jpeg"], [], ["S", "M", "L"]],
+    3: ["Campera rocker cuero ", 390000, "" ,["imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg", "imagenes/cueros/3-1.jpeg", "imagenes/cueros/3-2.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]],
+    4: ["Campera de flecos", 490000, "", ["imagenes/cueros/4-1.jpeg", "imagenes/cueros/4-2.jpeg", "imagenes/cueros/4-3.jpeg", "imagenes/cueros/4-4.jpeg"], ["Rojo", "Negro"], ["X", "M", "L"]],
+    5: ["Gorro", 70000, "", ["imagenes/cueros/5-1.jpeg", "imagenes/cueros/5-2.jpeg", "imagenes/cueros/5-3.jpeg", "imagenes/cueros/4-5.jpeg"], [], []],
 }

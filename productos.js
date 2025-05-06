@@ -1,5 +1,5 @@
 const tapados = {
-    0:6,
+    0:5,
     1:  ["Tapado cuadros", 65000, "Tela polar", ["imagenes/tapados/1-1.jpeg", "imagenes/tapados/1-2.jpeg", "imagenes/tapados/1-3.jpeg", "imagenes/tapados/1-4.jpeg"], [], [1, 2]],
     2:  ["Tapado metalizado Silver", 160000, "Tela corderito con foil", ["imagenes/tapados/2-1.jpeg", "imagenes/tapados/2-2.jpeg", "imagenes/tapados/2-3.jpeg", "imagenes/tapados/2-4.jpeg"], [], [1, 2,3]],
     3:  ["Tapado metalizado golden rose", 160000, "", ["imagenes/tapados/3-1.jpeg", "imagenes/tapados/3-2.jpeg", "imagenes/tapados/3-1.jpeg", "imagenes/tapados/3-2.jpeg"], [], [1, 2]],

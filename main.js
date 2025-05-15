@@ -322,7 +322,7 @@ function aniadir_al_carrito(type, id){
 
     if(!existe_producto(tipo[parseInt(id)][0],talle, 1, color)){
 
-        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1], cantidad, color);
+        const producto = new creador(tipo[parseInt(id)][0], talle, Math.floor(tipo[parseInt(id)][1] * 0.7), cantidad, color);
 
         CARRITO.push(producto);
 
@@ -495,7 +495,7 @@ function crear_producto(type, id){
                 <h2>${producto[id][0]}</h2>
                 
                 <!--<p class="product-price"><span class="old-price">$65.00</span> $49.00</p>-->
-                <p class="product-price">$ ${producto[id][1]}</p>
+                <p class="product-price">$ <s style="color:red;">${producto[id][1]}</s> ${Math.floor(producto[id][1] * 0.7)}</p>
                 <p class="product-desc">${producto[id][2]}</p>
 
                 <!-- Form -->
@@ -647,7 +647,7 @@ function crear_seccion(type){
                     
                         <h6>${productos[i+1][0]}</h6>
                     
-                    <p class="product-price">$${productos[i+1][1]}</p>
+                    <p class="product-price">$<s style="color:red;">${productos[i+1][1]}</s> ${Math.floor(productos[i+1][1] * 0.7)}</p>
 
                    
                 </div>

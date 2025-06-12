@@ -641,7 +641,7 @@ function crear_seccion(type){
                     
                 </div>
 
-                <!-- Product Description -->
+                <!-- Product Description s -->
                 <div class="product-description">
                     <span></span>
                     

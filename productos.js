@@ -10,10 +10,10 @@ const tapados = {
 
 const camperas = {
     0:4,
-    1:  ["Campera polar leopardo", 45000, "Tela polar", ["imagenes/camperas/1-1.jpeg", "imagenes/camperas/1-2.jpeg", "imagenes/camperas/1-3.jpeg", "imagenes/camperas/1-1.jpeg"], [], [1]],
-    2:  ["Campera polar Smile", 45000, "Tela polar", ["imagenes/camperas/2-1.jpeg", "imagenes/camperas/2-2.jpeg", "imagenes/camperas/2-3.jpeg", "imagenes/camperas/2-4.jpeg"], [], [1, 2]],
-    3:  ["Campera jean negra foil plata", 120000, "", ["imagenes/camperas/3-1.jpeg", "imagenes/camperas/3-2.jpeg", "imagenes/camperas/3-3.jpeg", "imagenes/camperas/3-4.jpeg"], [], [1, 2]],
-    4:  ["Campera biker con foil", 65000, "", ["imagenes/camperas/4-1.jpeg", "imagenes/camperas/4-2.jpeg", "imagenes/camperas/4-3.jpeg", "imagenes/camperas/4-1.jpeg"], [], [1, 2,3]],
+    10:  ["Campera polar leopardo", 45000, "Tela polar", ["imagenes/camperas/1-1.jpeg", "imagenes/camperas/1-2.jpeg", "imagenes/camperas/1-3.jpeg", "imagenes/camperas/1-1.jpeg"], [], [1]],
+    1:  ["Campera polar Smile", 45000, "Tela polar", ["imagenes/camperas/2-1.jpeg", "imagenes/camperas/2-2.jpeg", "imagenes/camperas/2-3.jpeg", "imagenes/camperas/2-4.jpeg"], [], [1, 2]],
+    2:  ["Campera jean negra foil plata", 120000, "", ["imagenes/camperas/3-1.jpeg", "imagenes/camperas/3-2.jpeg", "imagenes/camperas/3-3.jpeg", "imagenes/camperas/3-4.jpeg"], [], [1, 2]],
+    3:  ["Campera biker con foil", 65000, "", ["imagenes/camperas/4-1.jpeg", "imagenes/camperas/4-2.jpeg", "imagenes/camperas/4-3.jpeg", "imagenes/camperas/4-1.jpeg"], [], [1, 2,3]],
 
 }
 

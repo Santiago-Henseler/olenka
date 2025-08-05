@@ -6,6 +6,8 @@ var hay_talles = false;
 
 const cpOrigen = 1878;
 
+const DESCUENTO = 1;
+
 var CARRITO = [];
 
 class creador {
@@ -322,7 +324,7 @@ function aniadir_al_carrito(type, id){
 
     if(!existe_producto(tipo[parseInt(id)][0],talle, 1, color)){
 
-        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1]*0.75, cantidad, color);
+        const producto = new creador(tipo[parseInt(id)][0], talle, tipo[parseInt(id)][1]*DESCUENTO, cantidad, color);
 
         CARRITO.push(producto);
 
@@ -339,7 +341,7 @@ function aniadir_al_carrito(type, id){
                     <p class="size">Talle: ${talle}</p>
                     <p class="color" id="cantidad${tipo[parseInt(id)][0]}${talle}">Cantidad: ${cantidad}</p>
                     <p class="color" id="cantidad${tipo[parseInt(id)][0]}${color}">Color: ${color}</p>
-                    <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1] * cantidad*0.75}</p>
+                    <p class="price" id="price${tipo[parseInt(id)][0]}${talle}">$ ${tipo[parseInt(id)][1] * cantidad*DESCUENTO}</p>
                 </div>
             </a>
         </div>`
@@ -495,7 +497,7 @@ function crear_producto(type, id){
                 <h2>${producto[id][0]}</h2>
                 
                 <!--<p class="product-price"><span class="old-price">$65.00</span> $49.00</p>-->
-                <p class="product-price"><span class="old-price">$${producto[id][1]}</span>$${producto[id][1]*0.75}</p>
+                <p class="product-price"><!--<span class="old-price">$${producto[id][1]}</span>-->$${producto[id][1]*DESCUENTO}</p>
                 <p class="product-desc">${producto[id][2]}</p>
 
                 <!-- Form -->
@@ -647,7 +649,7 @@ function crear_seccion(type){
                     
                         <h6>${productos[i+1][0]}</h6>
                     
-                    <p class="product-price"><span class="old-price">$${productos[i+1][1]}</span>$${productos[i+1][1]*0.75}</p>
+                    <p class="product-price"><!--<span class="old-price">$${productos[i+1][1]}</span>-->$${productos[i+1][1]*DESCUENTO}</p>
 
                    
                 </div>

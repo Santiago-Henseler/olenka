@@ -390,6 +390,9 @@ function tipo_producto(type){
     if(type == "carteras"){
         return carteras;
     }
+    if(type=="collares"){
+        return collares;
+    }
 }
 
 function crear_producto(type, id){

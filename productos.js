@@ -60,15 +60,15 @@ const camisas = {
     1:  ["MAXI camisa gasa", 45000, "", ["imagenes/camisas/3-1.jpeg", "imagenes/camisas/3-2.jpeg", "imagenes/camisas/3-3.jpeg", "imagenes/camisas/3-1,jpeg"], ["Blanco", "Negro"], []],
 }
 
-const accesorios = {
+const carteras = {
     0:7,
-    1: ["Bolsa Lety", 35000, "Tela eco cuero", ["imagenes/Carteras/1-1.jpeg", "imagenes/Carteras/1-2.jpeg", "imagenes/Carteras/1-3.jpeg", "imagenes/Carteras/1-1.jpeg"], ["Fuxia"], []],
-    2: ["Cartera osito marrón", 35000, "Tela peluche", ["imagenes/Carteras/2-1.jpeg", "imagenes/Carteras/2-2.jpeg", "imagenes/Carteras/2-3.jpeg", "imagenes/Carteras/2-4.jpeg"], [], []],
-    3: ["Mini bag con charm", 35000, "", ["imagenes/Carteras/3-1.jpeg", "imagenes/Carteras/3-2.jpeg", "imagenes/Carteras/3-3.jpeg", "imagenes/Carteras/3-4.jpeg"], ["Amarillo", "Negro", "Fuxia"], []],
-    4: ["Sobre kiss", 35000, "", ["imagenes/Carteras/4-1.jpeg", "imagenes/Carteras/4-2.jpeg", "imagenes/Carteras/4-4.jpeg", "imagenes/Carteras/4-5.jpeg"], ["Negro con beso rojo", "Negro con beso violeta"], []],
-    5: ["MAXI bolso", 35000, "", ["imagenes/Carteras/5-1.jpeg", "imagenes/Carteras/5-2.jpeg", "imagenes/Carteras/5-3.jpeg", "imagenes/Carteras/5-1.jpeg"], ["Plata", "Cebra"], []],
-    6: ["Mini bag con Charm matelasse", 29000, "", ["imagenes/Carteras/6-1.jpeg", "imagenes/Carteras/6-2.jpeg", "imagenes/Carteras/6-3.jpeg", "imagenes/Carteras/6-4.jpeg"], ["Plata", "Cebra"], []],
-    7: ["Mini bag Félix ", 35000, "", ["imagenes/Carteras/7-1.jpeg", "imagenes/Carteras/7-2.jpeg", "imagenes/Carteras/7-3.jpeg", "imagenes/Carteras/7-4.jpeg"], ["Cebra animal print", "Rojo", "Plata", "Camel", "Negro con multicolor", "Blanco con multicolor"], []],
+    1: ["Bolsa Lety", 35000, "Tela eco cuero", ["imagenes/carteras/1-1.jpeg", "imagenes/carteras/1-2.jpeg", "imagenes/carteras/1-3.jpeg", "imagenes/carteras/1-1.jpeg"], ["Fuxia"], []],
+    2: ["Cartera osito marrón", 35000, "Tela peluche", ["imagenes/carteras/2-1.jpeg", "imagenes/carteras/2-2.jpeg", "imagenes/carteras/2-3.jpeg", "imagenes/carteras/2-4.jpeg"], [], []],
+    3: ["Mini bag con charm", 35000, "", ["imagenes/carteras/3-1.jpeg", "imagenes/carteras/3-2.jpeg", "imagenes/carteras/3-3.jpeg", "imagenes/carteras/3-4.jpeg"], ["Amarillo", "Negro", "Fuxia"], []],
+    4: ["Sobre kiss", 35000, "", ["imagenes/carteras/4-1.jpeg", "imagenes/carteras/4-2.jpeg", "imagenes/carteras/4-4.jpeg", "imagenes/carteras/4-5.jpeg"], ["Negro con beso rojo", "Negro con beso violeta"], []],
+    5: ["MAXI bolso", 35000, "", ["imagenes/carteras/5-1.jpeg", "imagenes/carteras/5-2.jpeg", "imagenes/carteras/5-3.jpeg", "imagenes/carteras/5-1.jpeg"], ["Plata", "Cebra"], []],
+    6: ["Mini bag con Charm matelasse", 29000, "", ["imagenes/carteras/6-1.jpeg", "imagenes/carteras/6-2.jpeg", "imagenes/carteras/6-3.jpeg", "imagenes/carteras/6-4.jpeg"], ["Plata", "Cebra"], []],
+    7: ["Mini bag Félix ", 35000, "", ["imagenes/carteras/7-1.jpeg", "imagenes/carteras/7-2.jpeg", "imagenes/carteras/7-3.jpeg", "imagenes/carteras/7-4.jpeg"], ["Cebra animal print", "Rojo", "Plata", "Camel", "Negro con multicolor", "Blanco con multicolor"], []],
 
 }
 

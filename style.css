@@ -30,7 +30,7 @@ html{
 
   #backgroundCarousel {
    width: 100%;
-   max-height: 80vh !important; 
+   max-height: 60vh !important; 
    z-index: 0;
    overflow: hidden;
    object-fit: cover; 
